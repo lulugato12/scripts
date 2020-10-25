@@ -1,3 +1,7 @@
+# Filter only protein coding genes
+# Lourdes B. Cajica
+# 10 - 3 - 20
+
 import os
 
 path = "C:/Users/hp/Desktop/redes_data/"
