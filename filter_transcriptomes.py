@@ -20,7 +20,7 @@ except OSError as error:
 print("finished.\nreading files...", end = "")
 
 file_data = open(path + "transcriptomes.txt", "r")
-file_cases = open(path + "genes_cerebro.txt", "r")
+file_cases = open(path + "output_genes.txt", "r")
 
 transcriptomes_unfiltered = file_data.readlines()
 cases = file_cases.readlines()
@@ -59,4 +59,4 @@ file_output_transcriptomes.writelines(filtered)
 file_output_transcriptomes.close()
 
 print("finished.")
-print("proteins saved in", path + "output/output_transcriptomes.txt.")
+print("transcriptomes saved in", path + "output/output_transcriptomes.txt.")

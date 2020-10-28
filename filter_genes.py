@@ -20,7 +20,7 @@ except OSError as error:
 
 print("finished.\nreading files...", end = "")
 
-file_genes = open(path + "protein_coding_genes.txt", "r")
+file_genes = open(path + "protein_coding.txt", "r")
 file_cases = open(path + "genes_cerebro.txt", "r")
 
 genes_unfiltered = file_genes.readlines()

@@ -20,7 +20,7 @@ except OSError as error:
 
 print("finished.\nreading files...", end = "")
 
-file_proteins = open(path + "proteins.txt", "r")
+file_proteins = open(path + "output_proteins.txt", "r")
 data_proteins = file_proteins.readlines()
 file_proteins.close()
 
@@ -33,8 +33,8 @@ for p in data_proteins:
 
 print("finished.\nfiltering genes...")
 
-for file in os.listdir(path + "ppi_interactions/"):
-    file_ppi = open(path + "ppi_interactions/" + file, "r")
+for file in os.listdir(path + "ppi/"):
+    file_ppi = open(path + "ppi/" + file, "r")
     data_ppi = file_ppi.readlines()
     file_ppi.close()
     ppi = list()
@@ -63,8 +63,8 @@ for file in os.listdir(path + "ppi_interactions/"):
 
 print("filtering finished.\nsaving data...", end = "")
 
-new_file = open(path + "/output/ppi_interactions.txt", "w")
+new_file = open(path + "/output/output_ppi.txt", "w")
 new_file.writelines(output_interactions)
 new_file.close()
 
-print("saved in", path + "output/ppi_interactions.txt.")
+print("saved in", path + "output/output_ppi.txt.")
