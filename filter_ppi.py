@@ -53,10 +53,17 @@ for file in os.listdir(path + "ppi/"):
         if data[0] in proteins and data[1] in proteins:
             output_interactions.append(genes[proteins.index(data[0])] + "\t" + genes[proteins.index(data[1])] + "\t1.0\n")
             print("got one.", len(output_interactions))
+            if len(output_interactions) == 500:
+                break
         else:
             print("not found.", len(output_interactions))
-        count += 1
 
+        count += 1
+        
+        if len(output_interactions) == 500:
+            break
+    if len(output_interactions) == 500:
+        break
     print("finished. sleeping...", end = "")
     time.sleep(20)
     print("ready!")

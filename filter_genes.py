@@ -56,9 +56,7 @@ for case in cases:
             filtered_proteins.append(gene + "\t" + value)
     else:
         print("not found in genes.")
-
     count += 1
-
 
 file_output_genes = open(path + "output/output_genes.txt", "w")
 file_output_proteins = open(path + "output/output_proteins.txt", "w")
