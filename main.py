@@ -7,7 +7,7 @@ import pandas as pd
 
 genes = 'C:/Users/hp/Desktop/redes_data/output_genes.txt'
 ppi = 'C:/Users/hp/Desktop/redes_data/output_ppi.txt'
-motif = 'C:/Users/hp/Desktop/redes_data/output_transcriptomes.txt'
+motif = 'C:/Users/hp/Desktop/redes_data/motif.txt'
 
 print("finished. running pandas...")
 
@@ -17,5 +17,8 @@ print("finished.\nrunning lioness...")
 
 lioness_obj = Lioness(panda_obj)
 lioness_obj.save_lioness_results(file = 'lioness.txt')
+
+analyze_lioness_obj = AnalyzeLioness(lioness_obj)
+analyze_lioness_obj.top_network_plot(top = 40, file = "lioness_top_40.png")
 
 print("finished.")
