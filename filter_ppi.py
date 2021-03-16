@@ -9,20 +9,20 @@ path = "C:/Users/hp/Desktop/redes_data/"
 output_interactions = list()
 count = 0
 
-print("creating new folder...", end="")
+print("Creating new folder...", end="")
 
 try:
     os.mkdir(path + "output/")                                                  # creates the folder where the data is going to be saved
 except OSError as error:
-    print("the folder already exists...", end = "")
+    print("The folder already exists.", end = " ")
 
-print("finished.\nreading files...", end = "")
+print("finished.\nReading files...", end = "")
 
 file_proteins = open(path + "string_interactions.tsv", "r")
 data_proteins = file_proteins.readlines()
 file_proteins.close()
 
-print("finished.\ncleaning PPI...")
+print("finished.\nCleaning PPI...")
 
 for line in data_proteins:
      l = line.split("\t")
@@ -31,10 +31,10 @@ for line in data_proteins:
      w = l[12].split("\n")[0]
      output_interactions.append(p1 + "\t" + p2 + "\t" + w + "\n")
 
-print("finished.\nsaving data...", end = "")
+print("finished.\nSaving data...", end = "")
 
-new_file = open(path + "/output/output_ppi.txt", "w")
+new_file = open(path + "/output/ppi.txt", "w")
 new_file.writelines(output_interactions)
 new_file.close()
 
-print("saved in", path + "output/output_ppi.txt.")
+print("finished.\nData saved in", path + "output/ppi.txt.")

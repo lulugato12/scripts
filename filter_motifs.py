@@ -1,6 +1,6 @@
 # change ids by its name
 # Lourdes B. Cajica
-# 10 - 25 - 20
+# 15 - 3 - 21
 
 import os
 import time
@@ -12,7 +12,14 @@ tf_id = list()
 gene_id = list()
 output = list()
 
-print("reading files...", end = "")
+print("Creating new folder...", end=" ")
+
+try:
+    os.mkdir(path + "output/")                                                  # creates the folder where the data is going to be saved
+except OSError as error:
+    print("The folder already exists.", end = "")
+
+print("finished.\nReading files...", end = " ")
 
 file_motif = open(path + "ToyMotifData.txt", "r")
 original = file_motif.readlines()
@@ -22,7 +29,7 @@ file_names = open(path + "mart_export.txt", "r")
 update = file_names.readlines()
 file_names.close()
 
-print("finished. \npreparing data...", end = "")
+print("finished.\nPreparing data...", end = " ")
 
 for l in update:
     line = l.split("\t")
@@ -31,7 +38,7 @@ for l in update:
     gene_name.append(line[2])
     tf_name.append(line[3].split("\n")[0])
 
-print("finished. \nfiltering names...")
+print("finished.\nFiltering names...")
 i = 0
 for p in original:
     print("line", i)
@@ -43,10 +50,10 @@ for p in original:
         output.append(line)
     i += 1
 
-print("filtering finished.\nsaving data...", end = "")
+print("finished.\nSaving data...", end = " ")
 
-new_file = open(path + "motif.txt", "w")
+new_file = open(path + "output/motif.txt", "w")
 new_file.writelines(output)
 new_file.close()
 
-print("saved in", path + "motif.txt.")
+print("finished.\nData saved in", path + "motif.txt.")

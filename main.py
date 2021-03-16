@@ -5,9 +5,9 @@ from netZooPy.lioness import Lioness
 from netZooPy.lioness.analyze_lioness import AnalyzeLioness
 import pandas as pd
 
-genes = 'C:/Users/hp/Desktop/redes_data/output_genes.txt'
-ppi = 'C:/Users/hp/Desktop/redes_data/output_ppi.txt'
-motif = 'C:/Users/hp/Desktop/redes_data/motif.txt'
+genes = 'C:/Users/hp/Desktop/redes_data/output/genes.txt'
+ppi = 'C:/Users/hp/Desktop/redes_data/output/ppi.txt'
+motif = 'C:/Users/hp/Desktop/redes_data/output/motif.txt'
 
 print("finished. running pandas...")
 
