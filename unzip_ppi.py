@@ -1,10 +1,14 @@
-# Unzip gene cases data from GDC
+# Unzip PPI interactions from STRING gz
 # Lourdes B. Cajica
-# 15 - 3 - 21
+# 17 - 3 - 21
 
 import os
-import xtarfile as tarfile
+import gzip
 
-folder = "C:/Users/hp/Desktop/redes_data/"                      # base path
-f = tarfile.open(folder + "protein.links.v11.0.txt.gz", 'r:gz') # unziping the .gz file
-f.extractall(path = path)                                       # saving the data in the file/ folder
+path = "C:/Users/hp/Desktop/redes_data/"                                # base path
+try:
+    txt = open(path + "data/protein.links.v11.0.txt", 'wb')             # new .txt files
+    gzfile = gzip.open(path + "file/protein.links.v11.0.txt.gz", 'rb')  # zipped folder
+        txt.writelines(gzfile)                                          # final file
+except gzip.BadGzipFile as e:                                           # if something goes wrong
+    print("Not a valid .gz file")
