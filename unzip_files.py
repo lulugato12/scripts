@@ -35,7 +35,7 @@ for dir in os.listdir(path + "file/"):                                  # naviga
                     txt = open(path + "data/" + dir + ".txt", 'wb')             # new .txt files
                     gzfile = gzip.open(path + "file/" + dir + "/" + gz, 'rb')   # zipped folder
                     txt.writelines(gzfile)
-                except gzip.BadGzipFile as e:                           # if something goes wrong
+                except gzip.OSError as e:                               # if something goes wrong
                     print("Not a valid .gz file")
                     bad.append(gz)
         count += 1
