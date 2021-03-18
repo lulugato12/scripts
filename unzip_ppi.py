@@ -5,10 +5,10 @@
 import os
 import gzip
 
-path = "C:/Users/hp/Desktop/redes_data/"                                # base path
+path = "/datos/ot/lbcajica/"                                                # base path
 try:
-    txt = open(path + "data/protein.links.v11.0.txt", 'wb')             # new .txt files
-    gzfile = gzip.open(path + "file/protein.links.v11.0.txt.gz", 'rb')  # zipped folder
-        txt.writelines(gzfile)                                          # final file
-except gzip.OSError as e:                                               # if something goes wrong
+    txt = open(path + "datos/protein.links.v11.0.txt", 'wb')                # new .txt files
+    gzfile = gzip.open(path + "datos/protein.links.v11.0.txt.gz", 'rb')     # zipped folder
+    txt.writelines(gzfile)                                                  # final file
+except gzip.OSError as e:                                                   # if something goes wrong
     print("Not a valid .gz file")
