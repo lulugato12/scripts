@@ -4,7 +4,7 @@
 
 import os
 
-path = "C:/Users/hp/Desktop/redes_data/"                                # the path to the directory
+path = "/datos/ot/lbcajica/"                                            # the path to the directory
 count = 0
 newlines = list()
 
