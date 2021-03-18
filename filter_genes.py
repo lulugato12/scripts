@@ -4,7 +4,7 @@
 
 import os
 
-path = "/datos/ot/lbcajica/""                                           # path to the current directory
+path = "/datos/ot/lbcajica/"                                            # path to the current directory
 filtered_genes = list()                                                 # list that save the filtered genes
 filtered_proteins = list()                                              # list that saves the filtered proteins
 proteins = list()                                                       # list that saves general proteins

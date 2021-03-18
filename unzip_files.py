@@ -6,7 +6,7 @@ import os
 import gzip
 import xtarfile as tarfile
 
-path = "/datos/ot/lbcajica"                                             # path that contains the actual folder
+path = "/datos/ot/lbcajica/"                                             # path that contains the actual folder
 folder = path + "datos/cerebro_data.gz"                                 # initial .gz file
 count = 0
 bad = list()                                                            # this list saves the non .gz file names
