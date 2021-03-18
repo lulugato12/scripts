@@ -31,7 +31,7 @@ file_proteins.close()
 print("finished.\nFiltering PPI...")
 
 for line in data_ppi:
-    print("Interaction " + count + "...", end = " ")
+    print("Interaction " + str(count) + "...", end = " ")
     l = line.split(" ")                                                # splits the data line
     p1 = l[0].split(".")[1]                                            # reads the first protein
     p2 = l[1].split(".")[1]                                            # reads the second protein

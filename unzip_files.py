@@ -28,7 +28,7 @@ print("finished.\nStarting extraction.")
 
 for dir in os.listdir(path + "file/"):                                  # navigates through the folder of cases
     if not dir.endswith(".txt"):                                        # ignores the txt files
-        print("file", count, "...", end = " ")
+        print("file " + str(count) + "...", end = " ")
         for gz in os.listdir(path + "file/" + dir + "/"):               # navigates through the case files
             if not gz.endswith(".txt"):                                 # ignores the txt files
                 try:

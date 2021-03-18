@@ -42,7 +42,7 @@ for l in update:
 print("finished.\nFiltering names...")
 
 for p in original:
-    print("line " + count + "...", end = " ")
+    print("line " + str(count) + "...", end = " ")
     prep = p.split("\t")                                                # splits the data line to get the motif and the gene
     line = ""
     if prep[0] in gene_name and prep[1] in gene_name:                   # check if both the motif and the gene exists in the registries

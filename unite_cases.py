@@ -11,7 +11,7 @@ newlines = list()
 print("Reading data...", end = " ")
 
 for file in os.listdir(path + "data/"):                                 # iterates through the directory files
-    print("file", count, "...", end = "")
+    print("file " + str(count) + "...", end = "")
     data = open(path + "data/" + file, "r")                             # open the current case file
     lines = data.readlines()                                            # read all the lines
     data.close()
