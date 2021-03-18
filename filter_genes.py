@@ -4,7 +4,7 @@
 
 import os
 
-path = "C:/Users/hp/Desktop/redes_data/"                                # path to the current directory
+path = "/datos/ot/lbcajica/""                                           # path to the current directory
 filtered_genes = list()                                                 # list that save the filtered genes
 filtered_proteins = list()                                              # list that saves the filtered proteins
 proteins = list()                                                       # list that saves general proteins
@@ -21,7 +21,7 @@ except OSError as error:
 
 print("finished.\nReading files...", end = " ")
 
-file_genes = open(path + "protein_coding.txt", "r")                     # opens the protein coding genes/proteins file
+file_genes = open(path + "datos/protein_coding.txt", "r")               # opens the protein coding genes/proteins file
 file_cases = open(path + "output/cases.txt", "r")                       # opens the cases file
 
 genes_unfiltered = file_genes.readlines()                               # read the data
@@ -45,7 +45,7 @@ for gene in genes_unfiltered:
 print("finished.\nFiltering genes...")
 
 for case in cases:
-    print("gene ", count, "...", end = " ")
+    print("gene " + count + "...", end = " ")
     c = case.split("\t")                                                # splits the data line
     if c[0] in genes:                                                   # checks if the gene is protein coding
         filtered_genes.append(case)                                     # saves the cases associated to that gene
@@ -54,12 +54,13 @@ for case in cases:
         protein = proteins[genes.index(c[0])]                           # searches for a protein associated to that gene
         if protein != " ":
             filtered_proteins.append(protein)                           # if a protein, saves the protein to another list
-            print("got one.")
+            print("got one.", end = " ")
         else:
-            print("not found in proteins.")
+            print("got one. not found in proteins." , end = " ")
     else:
-        print("not found in genes.")
+        print("not found in genes.", end = " ")
     count += 1
+    print("finished.")
 
 print("finished.\nSaving data...", end = " ")
 
@@ -72,4 +73,4 @@ file_output_proteins.writelines(filtered_proteins)                      # saves 
 file_output_genes.close()
 file_output_proteins.close()
 
-print("Finished.\nGenes saved in", path + "output/genes.txt.\nProteins saved in", path + "output/proteins.txt.")
+print("Finished.\nGenes saved in " + path + "output/genes.txt.\nProteins saved in " + path + "output/proteins.txt.")
