@@ -6,8 +6,8 @@ import os
 import gzip
 import xtarfile as tarfile
 
-path = "C:/Users/hp/Desktop/redes_data/"                                # path that contains the actual folder
-folder = path + "cerebro_data.gz"                                       # initial .gz file
+path = "/datos/ot/lbcajica"                                             # path that contains the actual folder
+folder = path + "datos/cerebro_data.gz"                                 # initial .gz file
 count = 0
 bad = list()                                                            # this list saves the non .gz file names
 
@@ -52,4 +52,4 @@ if len(bad) != 0:                                                       # if any
     bfiles.writelines(bad)                                              # stores the data
     bfiles.close()
 
-print("finished.\nSaved data in", path + "data/")
+print("finished.\nSaved data in " + path + "data/")
