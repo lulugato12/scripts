@@ -53,7 +53,7 @@ for case in cases:
         gene = genes[genes.index(c[0])]                                 # searches for the gene id
         protein = proteins[genes.index(c[0])]                           # searches for a protein associated to that gene
         if protein != " ":
-            filtered_proteins.append(gene + "\t" + protein)             # if a protein, save both the gene and the protein to another list
+            filtered_proteins.append(protein)                           # if a protein, saves the protein to another list
             print("got one.")
         else:
             print("not found in proteins.")
