@@ -45,7 +45,7 @@ for gene in genes_unfiltered:
 print("finished.\nFiltering genes...")
 
 for case in cases:
-    print("gene " + count + "...", end = " ")
+    print("gene " + str(count) + "...", end = " ")
     c = case.split("\t")                                                # splits the data line
     if c[0] in genes:                                                   # checks if the gene is protein coding
         filtered_genes.append(case)                                     # saves the cases associated to that gene
