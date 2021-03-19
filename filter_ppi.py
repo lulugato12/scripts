@@ -37,11 +37,7 @@ for line in data_ppi:
     p2 = l[1].split(".")[1]                                            # reads the second protein
     w = "0." + l[2].split("\n")[0]                                     # reads the interaction weight
 
-<<<<<<< HEAD
     if (p1 + "\n") in data_proteins and (p2 + "\n") in data_proteins:
-=======
-    if (l[0] + "\n") in data_proteins and (l[1] + "\n") in data_proteins:
->>>>>>> 3630d9437052376546d2c5a157520c7acac15020
          print("got one.", end = " ")
          output_interactions.append(p1 + "\t" + p2 + "\t" + w)         # saves the data
 
