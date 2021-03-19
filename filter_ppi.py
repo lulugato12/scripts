@@ -39,7 +39,7 @@ for line in data_ppi:
 
     if (p1 + "\n") in data_proteins and (p2 + "\n") in data_proteins:
          print("got one.", end = " ")
-         output_interactions.append(p1 + "\t" + p2 + "\t" + w)         # saves the data
+         output_interactions.append(p1 + "\t" + p2 + "\t" + w + "\n")   # saves the data
 
     print("finsihed.")
     count += 1
