@@ -120,7 +120,6 @@ print("finished.\nFiltering genes...")
 filtered_genes, filtered_proteins = filter_exec(cases_data, limit, max_found)
 
 print("finished.\nSaving data...", end = " ")
-@profile(presicion = 3, stream = log)
 save_data(filtered_genes, filtered_proteins)
 
 print("Finished.\nGenes saved in " + path + "output/genes.txt.\nProteins saved in " + path + "output/proteins.txt.")
