@@ -42,6 +42,7 @@ try:
     lioness_exec(panda_obj, nodes)
 
     print("finished. It took", time.thread_time()/60, "min")                        # time execution
+    log.write("Time execution:", time.thread_time()/60,"min\n")
 except MemoryError:                                                                 # rised error due to RAM limit
     print("Memory exceeded :(")
     log.write("Memory exceeded :(.\n")
