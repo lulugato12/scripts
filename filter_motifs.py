@@ -85,7 +85,7 @@ def save_data(output):
     new_file.close()
 
 print("Creating new folder...", end=" ")
-create_folder()
+create_folder(path)
 
 print("finished.\nReading files...", end = " ")
 original, update = reading_data(motifs, updates)
