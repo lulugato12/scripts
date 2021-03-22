@@ -10,6 +10,12 @@ import time
 import resource
 from memory_profiler import profile
 
+# variables
+path = "/datos/ot/lbcajica/"                                                # path to the current directory
+log = open(path + "log.txt", "a+")                                          # log file
+protein_link = path + "datos/9606.protein.links.v11.0.txt"
+proteins = path + "output/proteins.txt"
+
 # creates an output folder it not exists
 def create_folder(path):
     try:
@@ -18,6 +24,7 @@ def create_folder(path):
         print("The folder already exists.", end = " ")
 
 # reads the data from the files
+@profile(presicion = 3, stream = log)
 def reading_data(protein_link, proteins):
     file_ppi = open(protein_link, "r")                                      # opens the file that contiains the protein interactions
     file_proteins = open(proteins, "r")                                     # opens the file that contains the proteins
@@ -32,6 +39,7 @@ def reading_data(protein_link, proteins):
     return data_proteins, data_ppi
 
 # executes the filtering process
+@profile(presicion = 3, stream = log)
 def filter_exec(data_proteins, data_ppi):
     # variables
     output_interactions = list()                                            # list that stores the ppi data
@@ -54,26 +62,19 @@ def filter_exec(data_proteins, data_ppi):
     return output_interactions
 
 # saves the filtered data
+@profile(presicion = 3, stream = log)
 def save_data(output_interactions):
     new_file = open(path + "/output/ppi.txt", "w")                          # creates a new file to save the data
     new_file.writelines(output_interactions)                                # saves the data
     new_file.close()
 
-# variables
-path = "/datos/ot/lbcajica/"                                                # path to the current directory
-protein_link = path + "datos/9606.protein.links.v11.0.txt"
-proteins = path + "output/proteins.txt"
-
 print("Creating new folder...", end="")
 create_folder(path)
-log = open(path + "log.txt", "a+")                                          # log file
 
 print("finished.\nReading files...", end = "")
-@profile(presicion = 3, stream = log)
 data_proteins, data_ppi = reading_data(protein_link, proteins)
 
 print("finished.\nFiltering PPI...")
-@profile(presicion = 3, stream = log)
 output_interactions = filter_exec(data_proteins, data_ppi)
 
 print("finished.\nSaving data...", end = "")

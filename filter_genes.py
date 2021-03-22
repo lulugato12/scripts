@@ -11,6 +11,20 @@ import time
 import resource
 from memory_profiler import profile
 
+# variables
+path = "/datos/ot/lbcajica/"                                            # path to the current directory
+log = open(path + "log.txt", "a+")                                      # log file
+protein_coding = path + "datos/protein_coding.txt"                      # protein coding genes files
+cases = path + "output/cases.txt"                                       # cases files
+
+# limit setup
+limit = False                                                           # boolean to find an specific amount of genes
+max_found = 0                                                           # count limit
+if len(sys.argv) == 2:
+    limit = True                                                        # boolean to find an specific amount of genes
+    max_found = int(sys.argv[1])                                        # count limit
+    print("Will be filtered", max_found, "genes.", end = " ")
+
 # creates an output folder it not exists
 def create_folder(path):
     try:
@@ -19,6 +33,7 @@ def create_folder(path):
         print("The folder already exists.", end = " ")
 
 # reads the data from the files
+@profile(presicion = 3, stream = log)
 def reading_data(protein_coding, cases):
     file_genes = open(protein_coding, "r")                              # opens the protein coding genes/proteins file
     file_cases = open(cases, "r")                                       # opens the cases file
@@ -33,6 +48,7 @@ def reading_data(protein_coding, cases):
     return genes_data, cases_data
 
 # prepares the information
+@profile(presicion = 3, stream = log)
 def prep_data(genes_data):
     # storage variables
     genes = list()
@@ -49,6 +65,7 @@ def prep_data(genes_data):
     return genes, proteins
 
 # executes the filtering process
+@profile(presicion = 3, stream = log)
 def filter_exec(cases_data, limit, max_found):
     # storage variables
     filtered_genes = list()                                             # list that save the filtered genes
@@ -85,6 +102,7 @@ def filter_exec(cases_data, limit, max_found):
     return filtered_genes, filtered_proteins
 
 # saves the filtered data
+@profile(presicion = 3, stream = log)
 def save_data(filtered_genes, filtered_proteins):
     file_output_genes = open(path + "output/genes.txt", "w")            # creates a file to save the cases output
     file_output_proteins = open(path + "output/proteins.txt", "w")      # creates a file to save the gene-protein data
@@ -95,34 +113,16 @@ def save_data(filtered_genes, filtered_proteins):
     file_output_genes.close()
     file_output_proteins.close()
 
-# variables
-path = "/datos/ot/lbcajica/"                                            # path to the current directory
-protein_coding = path + "datos/protein_coding.txt"                      # protein coding genes files
-cases = path + "output/cases.txt"                                       # cases files
-
-# limit setup
-limit = False                                                           # boolean to find an specific amount of genes
-max_found = 0                                                           # count limit
-if len(sys.argv) == 2:
-    limit = True                                                        # boolean to find an specific amount of genes
-    max_found = int(sys.argv[1])                                        # count limit
-    print("Will be filtered", max_found, "genes.", end = " ")
-
 print("Creating new folder...", end = " ")
 create_folder(path)
 
-log = open(path + "log.txt", "a+")                                      # log file
-
 print("finished.\nReading files...", end = " ")
-@profile(presicion = 3, stream = log)
 genes_data, cases_data = reading_data(protein_coding, cases)
 
 print("finished.\nPreparing genes...", end = " ")
-@profile(presicion = 3, stream = log)
 genes, proteins = prep_data(genes_data)
 
 print("finished.\nFiltering genes...")
-@profile(presicion = 3, stream = log)
 filtered_genes, filtered_proteins = filter_exec(cases_data, limit, max_found)
 
 print("finished.\nSaving data...", end = " ")
