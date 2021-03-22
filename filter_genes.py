@@ -40,7 +40,7 @@ def reading_data(protein_coding, cases):
 
     genes_data = file_genes.readlines()                                 # read the data
     cases_data = file_cases.readlines()                                 # read the data
-    genes_unfiltered = genes_unfiltered[1:]                             # deletes the title line
+    genes_data = genes_data[1:]                                         # deletes the title line
 
     file_genes.close()
     file_cases.close()
