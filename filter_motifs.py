@@ -55,11 +55,11 @@ def prep_data(update):
         gene_name.append(line[2])                                       # saves the gene name
         tf_name.append(line[3].split("\n")[0])                          # saves the motif name
 
-    return gene_id, ft_id, gene_name, tf_name
+    return gene_id, tf_id, gene_name, tf_name
 
 # executes the filtering process
 @profile(precision = 3, stream = log)
-def filter_exec(gene_id, ft_id, gene_name, tf_name):
+def filter_exec(gene_id, tf_id, gene_name, tf_name):
     # variables
     output = list()                                                     # output data lines
     count = 0
@@ -91,10 +91,10 @@ print("finished.\nReading files...", end = " ")
 original, update = reading_data(motifs, updates)
 
 print("finished.\nPreparing data...", end = " ")
-gene_id, ft_id, gene_name, tf_name = prep_data(update)
+gene_id, tf_id, gene_name, tf_name = prep_data(update)
 
 print("finished.\nFiltering names...")
-output = filter_exec(gene_id, ft_id, gene_name, tf_name)
+output = filter_exec(gene_id, tf_id, gene_name, tf_name)
 
 print("finished.\nSaving data...", end = " ")
 save_data(output)
