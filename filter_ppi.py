@@ -8,6 +8,7 @@ import os
 # requirements for resource measurement
 import time
 import resource
+import memory_profiler
 
 # creates an output folder it not exists
 def create_folder(path):
