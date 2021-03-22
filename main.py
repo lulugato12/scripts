@@ -9,11 +9,11 @@ from netZooPy.lioness.analyze_lioness import AnalyzeLioness
 import pandas as pd
 
 # variables definition
-path = "/datos/ot/lbcajica/output/"                                                 # base path to the data folder
+path = "/datos/ot/lbcajica/"                                                        # base path to the data folder
 log = open(path + "log.txt", "a+")                                                  # log file
-genes = path + "genes.txt"                                                          # genes file
-ppi = path + "ppi.txt"                                                              # ppi file
-motif = path + "motif.txt"                                                          # motif file
+genes = path + "output/genes.txt"                                                   # genes file
+ppi = path + "output/ppi.txt"                                                       # ppi file
+motif = path + "output/motif.txt"                                                   # motif file
 nodes = 40                                                                          # amount of nodes for the final plot
 RAM_max = 40                                                                        # RAM max value in Gigabytes
 
