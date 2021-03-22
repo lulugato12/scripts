@@ -130,4 +130,6 @@ save_data(filtered_genes, filtered_proteins)
 
 print("Finished.\nGenes saved in " + path + "output/genes.txt.\nProteins saved in " + path + "output/proteins.txt.")
 print("It took: ", time.thread_time()/60, "min\n")
-log.write("Time execution:", time.thread_time()/60, "min\n")
+
+log.write("Time execution:" + str(time.thread_time()/60) + "min\n")
+log.close()

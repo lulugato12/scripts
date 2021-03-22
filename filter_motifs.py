@@ -99,4 +99,6 @@ save_data(output)
 
 print("finished.\nData saved in " + path + "motif.txt.")
 print("It took: ", time.thread_time()/60, "min\n")
-log.write("Time execution:", time.thread_time()/60, "min\n")
+
+log.write("Time execution:" + str(time.thread_time()/60) + "min\n")
+log.close()
