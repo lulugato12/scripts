@@ -33,11 +33,7 @@ def create_folder(path):
         print("The folder already exists.", end = " ")
 
 # reads the data from the files
-<<<<<<< HEAD
 @profile(precision = 3, stream = log)
-=======
-@profile(precicion = 3, stream = log)
->>>>>>> 6d8da6cd8bb7b8d5f2809b7190c28eb1d1df43e2
 def reading_data(protein_coding, cases):
     file_genes = open(protein_coding, "r")                              # opens the protein coding genes/proteins file
     file_cases = open(cases, "r")                                       # opens the cases file
@@ -52,11 +48,7 @@ def reading_data(protein_coding, cases):
     return genes_data, cases_data
 
 # prepares the information
-<<<<<<< HEAD
 @profile(precision = 3, stream = log)
-=======
-@profile(precicion = 3, stream = log)
->>>>>>> 6d8da6cd8bb7b8d5f2809b7190c28eb1d1df43e2
 def prep_data(genes_data):
     # storage variables
     genes = list()
@@ -73,11 +65,7 @@ def prep_data(genes_data):
     return genes, proteins
 
 # executes the filtering process
-<<<<<<< HEAD
 @profile(precision = 3, stream = log)
-=======
-@profile(precicion = 3, stream = log)
->>>>>>> 6d8da6cd8bb7b8d5f2809b7190c28eb1d1df43e2
 def filter_exec(cases_data, limit, max_found):
     # storage variables
     filtered_genes = list()                                             # list that save the filtered genes
@@ -114,11 +102,7 @@ def filter_exec(cases_data, limit, max_found):
     return filtered_genes, filtered_proteins
 
 # saves the filtered data
-<<<<<<< HEAD
 @profile(precision = 3, stream = log)
-=======
-@profile(precicion = 3, stream = log)
->>>>>>> 6d8da6cd8bb7b8d5f2809b7190c28eb1d1df43e2
 def save_data(filtered_genes, filtered_proteins):
     file_output_genes = open(path + "output/genes.txt", "w")            # creates a file to save the cases output
     file_output_proteins = open(path + "output/proteins.txt", "w")      # creates a file to save the gene-protein data
