@@ -24,7 +24,7 @@ def create_folder(path):
         print("The folder already exists.", end = " ")
 
 # reads the data from the files
-@profile(presicion = 3, stream = log)
+@profile(precision = 3, stream = log)
 def reading_data(protein_link, proteins):
     file_ppi = open(protein_link, "r")                                      # opens the file that contiains the protein interactions
     file_proteins = open(proteins, "r")                                     # opens the file that contains the proteins
@@ -39,7 +39,7 @@ def reading_data(protein_link, proteins):
     return data_proteins, data_ppi
 
 # executes the filtering process
-@profile(presicion = 3, stream = log)
+@profile(precision = 3, stream = log)
 def filter_exec(data_proteins, data_ppi):
     # variables
     output_interactions = list()                                            # list that stores the ppi data
@@ -62,7 +62,7 @@ def filter_exec(data_proteins, data_ppi):
     return output_interactions
 
 # saves the filtered data
-@profile(presicion = 3, stream = log)
+@profile(precision = 3, stream = log)
 def save_data(output_interactions):
     new_file = open(path + "/output/ppi.txt", "w")                          # creates a new file to save the data
     new_file.writelines(output_interactions)                                # saves the data
