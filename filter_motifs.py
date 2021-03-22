@@ -24,7 +24,11 @@ def create_folder(path):
         print("The folder already exists.", end = " ")
 
 # reads the data from the files
+<<<<<<< HEAD
 @profile(precision = 3, stream = log)
+=======
+@profile(precicion = 3, stream = log)
+>>>>>>> 6d8da6cd8bb7b8d5f2809b7190c28eb1d1df43e2
 def reading_data(motifs, updates):
     file_motif = open(motifs, "r")                                      # opens the file that contains the motif data
     file_names = open(updates, "r")                                     # opens the file that contians the name-id relation
@@ -38,7 +42,11 @@ def reading_data(motifs, updates):
     return original, update
 
 # prepares the information
+<<<<<<< HEAD
 @profile(precision = 3, stream = log)
+=======
+@profile(precicion = 3, stream = log)
+>>>>>>> 6d8da6cd8bb7b8d5f2809b7190c28eb1d1df43e2
 def prep_data(update):
     # storage
     tf_name = list()                                                    # list of motif names
@@ -56,7 +64,11 @@ def prep_data(update):
     return gene_id, ft_id, gene_name, tf_name
 
 # executes the filtering process
+<<<<<<< HEAD
 @profile(precision = 3, stream = log)
+=======
+@profile(precicion = 3, stream = log)
+>>>>>>> 6d8da6cd8bb7b8d5f2809b7190c28eb1d1df43e2
 def filter_exec(gene_id, ft_id, gene_name, tf_name):
     # variables
     output = list()                                                     # output data lines
@@ -76,7 +88,11 @@ def filter_exec(gene_id, ft_id, gene_name, tf_name):
     return output
 
 # saves the filtered data
+<<<<<<< HEAD
 @profile(precision = 3, stream = log)
+=======
+@profile(precicion = 3, stream = log)
+>>>>>>> 6d8da6cd8bb7b8d5f2809b7190c28eb1d1df43e2
 def save_data(output):
     new_file = open(path + "output/motif.txt", "w")                     # creates a new file to save the motifs
     new_file.writelines(output)                                         # saves the data
