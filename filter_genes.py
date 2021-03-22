@@ -17,6 +17,8 @@ log = open(path + "log.txt", "a+")                                      # log fi
 protein_coding = path + "datos/protein_coding.txt"                      # protein coding genes files
 cases = path + "output/cases.txt"                                       # cases files
 
+log.write("Filter_motifs.\n")
+
 # limit setup
 limit = False                                                           # boolean to find an specific amount of genes
 max_found = 0                                                           # count limit
