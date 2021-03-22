@@ -2,8 +2,9 @@
 # Lourdes B. Cajica
 # 20 - 3 - 21
 
-# to create folder
+# to create folder and get parameters
 import os
+import sys
 
 # requirements for resource measurement
 import time
@@ -99,8 +100,12 @@ protein_coding = path + "datos/protein_coding.txt"                      # protei
 cases = path + "output/cases.txt"                                       # cases files
 
 # limit setup
-limit = True                                                            # boolean to find an specific amount of genes
-max_found = 500                                                         # count limit
+limit = False                                                           # boolean to find an specific amount of genes
+max_found = 0                                                           # count limit
+if len(sys.argv) == 2:
+    limit = True                                                        # boolean to find an specific amount of genes
+    max_found = int(sys.argv[1])                                        # count limit
+    print("Will be filtered", max_found, "genes.", end = " ")
 
 print("Creating new folder...", end = " ")
 create_folder(path)
