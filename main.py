@@ -1,6 +1,7 @@
 # requirements for resource monitoring
 import time
 import resource
+from memory_profiler import profile
 
 # NetZooPy requirements
 from netZooPy.panda import Panda
