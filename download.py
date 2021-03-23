@@ -16,6 +16,6 @@ output = 'protein_coding.txt'
 gdown.download(url, output, quiet=False)
 
 # motif data
-url = 'https://drive.google.com/1DXtTuTIIL5uT_FZkJtLrzC-uiTyvSwEA'
+url = 'https://drive.google.com/uc?id=1DXtTuTIIL5uT_FZkJtLrzC-uiTyvSwEA'
 output = 'ToyMotifData.txt'
 gdown.download(url, output, quiet=False)
