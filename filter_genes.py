@@ -90,7 +90,7 @@ def filter_exec(cases_data, limit, max_found):
             if protein != " ":
                 filtered_proteins.append(protein)                       # if a protein, saves the protein to another list
 
-            if max_found:
+            if limit:
                 found += 1
         else:
             print("not found in genes.", end = " ")
@@ -98,7 +98,7 @@ def filter_exec(cases_data, limit, max_found):
         count += 1
         print("finished.")
 
-        if limit and found <= max_found:
+        if limit and found > max_found:
             break
 
     return filtered_genes, filtered_proteins
