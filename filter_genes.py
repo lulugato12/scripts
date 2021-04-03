@@ -17,7 +17,7 @@ log = open(path + "log.txt", "a+")                                      # log fi
 protein_coding = path + "datos/protein_coding.txt"                      # protein coding genes files
 cases = path + "output/cases.txt"                                       # cases files
 
-log.write("Filter_motifs.\n")
+log.write("Filter genes.\n")
 
 # limit setup
 limit = False                                                           # boolean to find an specific amount of genes
@@ -35,7 +35,7 @@ def create_folder(path):
         print("The folder already exists.", end = " ")
 
 # reads the data from the files
-@profile(precision = 3, stream = log)
+#@profile(precision = 3, stream = log)
 def reading_data(protein_coding, cases):
     file_genes = open(protein_coding, "r")                              # opens the protein coding genes/proteins file
     file_cases = open(cases, "r")                                       # opens the cases file
@@ -50,7 +50,7 @@ def reading_data(protein_coding, cases):
     return genes_data, cases_data
 
 # prepares the information
-@profile(precision = 3, stream = log)
+#@profile(precision = 3, stream = log)
 def prep_data(genes_data):
     # storage variables
     genes = list()
@@ -67,7 +67,7 @@ def prep_data(genes_data):
     return genes, proteins
 
 # executes the filtering process
-@profile(precision = 3, stream = log)
+#@profile(precision = 3, stream = log)
 def filter_exec(cases_data, limit, max_found):
     # storage variables
     filtered_genes = list()                                             # list that save the filtered genes
@@ -104,7 +104,7 @@ def filter_exec(cases_data, limit, max_found):
     return filtered_genes, filtered_proteins
 
 # saves the filtered data
-@profile(precision = 3, stream = log)
+#@profile(precision = 3, stream = log)
 def save_data(filtered_genes, filtered_proteins):
     file_output_genes = open(path + "output/genes.txt", "w")            # creates a file to save the cases output
     file_output_proteins = open(path + "output/proteins.txt", "w")      # creates a file to save the gene-protein data

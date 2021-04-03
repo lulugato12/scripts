@@ -21,13 +21,13 @@ RAM_max = 40                                                                    
 log.write("LIONESS\n")
 
 # function to execute the PANDA algorithm
-@profile(precision = 3, stream = log)
+#@profile(precision = 3, stream = log)
 def panda_exec(genes, motif, ppi):
     panda_obj = Panda(genes, motif, ppi, remove_missing=False, keep_expression_matrix=True, save_memory=False)
     return panda_obj
 
 # function to execute the pipeline of the LIONESS algorithm
-@profile(precision = 3, stream = log)
+#@profile(precision = 3, stream = log)
 def lioness_exec(panda_obj, nodes):
     lioness_obj = Lioness(panda_obj)                                                # LIONESS object generator
     lioness_obj.save_lioness_results(file = 'lioness.txt')                          # store the LIONESS data

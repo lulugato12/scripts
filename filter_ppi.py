@@ -16,7 +16,7 @@ log = open(path + "log.txt", "a+")                                          # lo
 protein_link = path + "datos/9606.protein.links.v11.0.txt"
 proteins = path + "output/proteins.txt"
 
-log.write("Filter_motifs.\n")
+log.write("Filter ppi.\n")
 
 # creates an output folder it not exists
 def create_folder(path):

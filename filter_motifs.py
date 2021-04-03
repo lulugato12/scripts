@@ -16,7 +16,7 @@ log = open(path + "log.txt", "a+")                                      # log fi
 motifs = path + "datos/ToyMotifData.txt"                                # motif file
 updates = path + "datos/mart_export.txt"                                # ids file
 
-log.write("Filter_motifs.\n")
+log.write("Filter motifs.\n")
 
 # creates an output folder it not exists
 def create_folder(path):

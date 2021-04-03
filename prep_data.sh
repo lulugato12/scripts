@@ -1,45 +1,10 @@
 #!/bin/bash
 
 # script to prepare data for the lioness algorithm
-echo "Preparing data for the lioness algorithm"
+echo "LIONESS EXECUTION"
 
 # download data
-echo "Downloading data..."
-sleep 2
-
-mkdir datos
-cd datos/
 #wget https://stringdb-static.org/download/protein.links.v11.0/9606.protein.links.v11.0.txt.gz
-python \../scripts/download.py
-cd ..
-
-# unzip data 
-echo "Starting unzip process..."
-sleep 2
-
-#python scripts/unzip_files.py
-#python scripts/unite_cases.py
-#python scripts/unzip_ppi.py
-
-# removing trash
-echo "Cleaning..."
-sleep 2
-
-#rm -rd data/
-#rm -rd file/
-
-# Preparing motif and PPI
-echo "Filtering proteins..."
-sleep 2
-#python scripts/filter_genes.py
-
-echo "Preparing motifs..."
-sleep 2
-#python scripts/filter_motifs.py
-
-echo "Preparing PPI..."
-sleep 2
-#python scripts/filter_ppi.py
 
 # 500 genes execution
 echo "500 genes execution"
@@ -60,6 +25,10 @@ python scripts/main.py
 echo "Finished lioness..."
 sleep 2
 
+mkdir lioness500
+mv lioness_output/ lioness500/
+mv lioness_top_40.png lioness500/
+
 # 1000 genes execution
 echo "1000 genes execution"
 sleep 2
@@ -79,6 +48,10 @@ python scripts/main.py
 echo "Finished lioness..."
 sleep 2
 
+mkdir lioness1000
+mv lioness_output/ lioness1000/
+mv lioness_top_40.png lioness1000/
+
 # 3000 genes execution
 echo "3000 genes execution"
 sleep 2
@@ -96,6 +69,11 @@ sleep 2
 python scripts/main.py
 
 echo "Finished lioness..."
+sleep 2
+
+mkdir lioness3000
+mv lioness_output/ lioness3000/
+mv lioness_top_40.png lioness3000/
 
 # 5000 genes execution
 echo "5000 genes execution"
@@ -116,6 +94,10 @@ python scripts/main.py
 echo "Finished lioness..."
 sleep 2
 
+mkdir lioness5000
+mv lioness_output/ lioness5000/
+mv lioness_top_40.png lioness5000/
+
 # 10000 genes execution
 echo "10000 genes execution"
 sleep 2
@@ -135,10 +117,31 @@ python scripts/main.py
 echo "Finished lioness..."
 sleep 2
 
-# Last cleaning
-echo "Cleaning..."
+mkdir lioness10000
+mv lioness_output/ lioness10000/
+mv lioness_top_40.png lioness10000/
+
+# 10000 genes execution
+echo "10000 genes execution"
 sleep 2
 
-rm -rd datos/
+# filter genes
+echo "Starting genes filter process..."
+sleep 2
+
+python scripts/filter_genes.py 13000
+
+# LIONESS execution
+echo "Execution lioness..."
+sleep 2
+
+python scripts/main.py
+
+echo "Finished lioness..."
+sleep 2
+
+mkdir lioness13000
+mv lioness_output/ lioness13000/
+mv lioness_top_40.png lioness13000/
 
 echo "Process finished. Have a nice day :)"
