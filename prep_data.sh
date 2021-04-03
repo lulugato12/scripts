@@ -16,6 +16,16 @@ sleep 2
 
 python scripts/filter_genes.py 500
 
+echo "Starting ppi filter process..."
+sleep 2
+
+python scripts/filter_ppi.py
+
+echo "Starting motif silter process..."
+sleep 2
+
+python scripts/filter_motifs.py
+
 # LIONESS algorithm
 echo "Executing lioness..."
 sleep 2
@@ -38,6 +48,16 @@ echo "Starting genes filter process..."
 sleep 2
 
 python scripts/filter_genes.py 1000
+
+echo "Starting ppi filter process..."
+sleep 2
+
+python scripts/filter_ppi.py
+
+echo "Starting motif silter process..."
+sleep 2
+
+python scripts/filter_motifs.py
 
 # LIONESS execution
 echo "Execution lioness..."
@@ -62,6 +82,16 @@ sleep 2
 
 python scripts/filter_genes.py 3000
 
+echo "Starting ppi filter process..."
+sleep 2
+
+python scripts/filter_ppi.py
+
+echo "Starting motif silter process..."
+sleep 2
+
+python scripts/filter_motifs.py
+
 # LIONESS execution
 echo "Execution lioness..."
 sleep 2
@@ -84,6 +114,16 @@ echo "Starting genes filter process..."
 sleep 2
 
 python scripts/filter_genes.py 5000
+
+echo "Starting ppi filter process..."
+sleep 2
+
+python scripts/filter_ppi.py
+
+echo "Starting motif silter process..."
+sleep 2
+
+python scripts/filter_motifs.py
 
 # LIONESS execution
 echo "Execution lioness..."
@@ -108,6 +148,16 @@ sleep 2
 
 python scripts/filter_genes.py 10000
 
+echo "Starting ppi filter process..."
+sleep 2
+
+python scripts/filter_ppi.py
+
+echo "Starting motif silter process..."
+sleep 2
+
+python scripts/filter_motifs.py
+
 # LIONESS execution
 echo "Execution lioness..."
 sleep 2
@@ -130,6 +180,16 @@ echo "Starting genes filter process..."
 sleep 2
 
 python scripts/filter_genes.py 13000
+
+echo "Starting ppi filter process..."
+sleep 2
+
+python scripts/filter_ppi.py
+
+echo "Starting motif silter process..."
+sleep 2
+
+python scripts/filter_motifs.py
 
 # LIONESS execution
 echo "Execution lioness..."
