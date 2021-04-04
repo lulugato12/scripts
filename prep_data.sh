@@ -21,7 +21,7 @@ sleep 2
 
 python scripts/filter_ppi.py
 
-echo "Starting motif silter process..."
+echo "Starting motif filter process..."
 sleep 2
 
 python scripts/filter_motifs.py
