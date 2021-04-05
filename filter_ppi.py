@@ -53,11 +53,11 @@ def filter_exec(data_proteins, data_ppi, minw):
         l = line.split(" ")                                                 # splits the data line
         p1 = l[0].split(".")[1]                                             # reads the first protein
         p2 = l[1].split(".")[1]                                             # reads the second protein
-        w = "0." + l[2].split("\n")[0]                                      # reads the interaction weight
+        w = l[2].split("\n")[0]                                             # reads the interaction weight
 
         if (p1 + "\n") in data_proteins and (p2 + "\n") in data_proteins and int(w) >= minw:
              print("got one.", end = " ")
-             output_interactions.append(p1 + "\t" + p2 + "\t" + w + "\n")   # saves the data
+             output_interactions.append(p1 + "\t" + p2 + "\t0." + w + "\n") # saves the data
 
         print("finsihed.")
         count += 1
