@@ -15,6 +15,7 @@ path = "/datos/ot/lbcajica/"                                                # pa
 log = open(path + "log.txt", "a+")                                          # log file
 protein_link = path + "datos/9606.protein.links.v11.0.txt"
 proteins = path + "output/proteins.txt"
+minw = 700
 
 log.write("Filter ppi.\n")
 
@@ -42,7 +43,7 @@ def reading_data(protein_link, proteins):
 
 # executes the filtering process
 #@profile(precision = 3, stream = log)
-def filter_exec(data_proteins, data_ppi):
+def filter_exec(data_proteins, data_ppi, minw):
     # variables
     output_interactions = list()                                            # list that stores the ppi data
     count = 0
@@ -54,7 +55,7 @@ def filter_exec(data_proteins, data_ppi):
         p2 = l[1].split(".")[1]                                             # reads the second protein
         w = "0." + l[2].split("\n")[0]                                      # reads the interaction weight
 
-        if (p1 + "\n") in data_proteins and (p2 + "\n") in data_proteins:
+        if (p1 + "\n") in data_proteins and (p2 + "\n") in data_proteins and int(w) >= minw:
              print("got one.", end = " ")
              output_interactions.append(p1 + "\t" + p2 + "\t" + w + "\n")   # saves the data
 
@@ -77,7 +78,7 @@ print("finished.\nReading files...", end = "")
 data_proteins, data_ppi = reading_data(protein_link, proteins)
 
 print("finished.\nFiltering PPI...")
-output_interactions = filter_exec(data_proteins, data_ppi)
+output_interactions = filter_exec(data_proteins, data_ppi, minw)
 
 print("finished.\nSaving data...", end = "")
 save_data(output_interactions)
