@@ -13,7 +13,6 @@ import pandas as pd
 path = "/datos/ot/lbcajica/"                                                        # base path to the data folder
 log = open(path + "log.txt", "a+")                                                  # log file
 genes = path + "output/genes.txt"                                                   # genes file
-ppi = path + "output/ppi.txt"                                                       # ppi file
 motif = path + "output/motif.txt"                                                   # motif file
 nodes = 40                                                                          # amount of nodes for the final plot
 RAM_max = 40                                                                        # RAM max value in Gigabytes
@@ -22,8 +21,8 @@ log.write("LIONESS\n")
 
 # function to execute the PANDA algorithm
 #@profile(precision = 3, stream = log)
-def panda_exec(genes, motif, ppi):
-    panda_obj = Panda(genes, motif, ppi, remove_missing=False, keep_expression_matrix=True, save_memory=False)
+def panda_exec(genes, motif):
+    panda_obj = Panda(genes, motif, None, remove_missing=False, keep_expression_matrix=True, save_memory=False)
     return panda_obj
 
 # function to execute the pipeline of the LIONESS algorithm
@@ -44,7 +43,7 @@ try:
     limit_memory(RAM_max * 1024 * 1024 * 1024)                                      # RAM max_limit | 40 G
 
     print("Running pandas...")
-    panda_obj = panda_exec(genes, motif, ppi)
+    panda_obj = panda_exec(genes, motif)
 
     print("finished.\nRunning lioness...")
     lioness_exec(panda_obj, nodes)
