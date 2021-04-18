@@ -70,7 +70,7 @@ def filter_exec(data_proteins, data_ppi, minw):
 # saves the filtered data
 #@profile(precision = 3, stream = log)
 def save_data(output_interactions):
-    new_file = open(path + "/output/ppi.txt", "w")                          # creates a new file to save the data
+    new_file = open(path + "/output/"+str(minw)+"ppi.txt", "w")             # creates a new file to save the data
     new_file.writelines(output_interactions)                                # saves the data
     new_file.close()
 
