@@ -4,6 +4,7 @@
 
 # to create folder
 import os
+import sys
 
 # requirements for resource measurement
 import time
@@ -15,7 +16,9 @@ path = "/datos/ot/lbcajica/"                                                # pa
 log = open(path + "log.txt", "a+")                                          # log file
 protein_link = path + "datos/9606.protein.links.v11.0.txt"
 proteins = path + "output/proteins.txt"
-minw = 1000
+minw = 700
+if len(sys.argv) == 2:
+    minw = int(sys.argv[1]) 
 
 log.write("Filter ppi.\n")
 
