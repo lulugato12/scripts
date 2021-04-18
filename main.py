@@ -14,6 +14,7 @@ path = "/datos/ot/lbcajica/"                                                    
 log = open(path + "log.txt", "a+")                                                  # log file
 genes = path + "output/genes.txt"                                                   # genes file
 motif = path + "output/motif.txt"                                                   # motif file
+ppi = path + "output/ppi.txt"                                                       # ppi file
 nodes = 40                                                                          # amount of nodes for the final plot
 RAM_max = 40                                                                        # RAM max value in Gigabytes
 
@@ -21,8 +22,8 @@ log.write("LIONESS\n")
 
 # function to execute the PANDA algorithm
 #@profile(precision = 3, stream = log)
-def panda_exec(genes, motif):
-    panda_obj = Panda(genes, motif, None, remove_missing=False, keep_expression_matrix=True, save_memory=False)
+def panda_exec(genes, motif, ppi):
+    panda_obj = Panda(genes, motif, ppi, remove_missing=False, keep_expression_matrix=True, save_memory=False)
     return panda_obj
 
 # function to execute the pipeline of the LIONESS algorithm
@@ -33,6 +34,8 @@ def lioness_exec(panda_obj, nodes):
 
     analyze_lioness_obj = AnalyzeLioness(lioness_obj)                               # network generator
     analyze_lioness_obj.top_network_plot(top = nodes, file = "lioness_top_40.png")  # plot generator up to X nodes
+    analyze_lioness_obj.top_network_plot(top = nodes, file = "lioness_top_60.png")  # plot generator up to X nodes
+    analyze_lioness_obj.top_network_plot(top = nodes, file = "lioness_top_80.png")  # plot generator up to X nodes
 
 # function to set a limit of RAM resource
 def limit_memory(maxsize):
@@ -43,7 +46,7 @@ try:
     limit_memory(RAM_max * 1024 * 1024 * 1024)                                      # RAM max_limit | 40 G
 
     print("Running pandas...")
-    panda_obj = panda_exec(genes, motif)
+    panda_obj = panda_exec(genes, motif, ppi)
 
     print("finished.\nRunning lioness...")
     lioness_exec(panda_obj, nodes)
