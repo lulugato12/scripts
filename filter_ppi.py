@@ -15,7 +15,7 @@ path = "/datos/ot/lbcajica/"                                                # pa
 log = open(path + "log.txt", "a+")                                          # log file
 protein_link = path + "datos/9606.protein.links.v11.0.txt"
 proteins = path + "output/proteins.txt"
-minw = 700
+minw = 1000
 
 log.write("Filter ppi.\n")
 
