@@ -18,7 +18,7 @@ protein_link = path + "datos/9606.protein.links.v11.0.txt"
 proteins = path + "output/proteins.txt"
 minw = 700
 if len(sys.argv) == 2:
-    minw = int(sys.argv[1]) 
+    minw = int(sys.argv[1])
 
 log.write("Filter ppi.\n")
 
@@ -86,7 +86,7 @@ output_interactions = filter_exec(data_proteins, data_ppi, minw)
 print("finished.\nSaving data...", end = "")
 save_data(output_interactions)
 
-print("finished.\nData saved in", path + "output/ppi.txt.")
+print("finished.\nData saved in", path + "output/"+str(minw)+"ppi.txt.")
 print("It took: ", time.thread_time()/60, "min\n")
 
 log.write("Time execution:" + str(time.thread_time()/60) + "min\n")
