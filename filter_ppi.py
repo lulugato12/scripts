@@ -70,7 +70,7 @@ def filter_exec(data_proteins, data_ppi, minw):
 # saves the filtered data
 #@profile(precision = 3, stream = log)
 def save_data(output_interactions):
-    new_file = open(path + "/output/"+str(minw)+"ppi.txt", "w")             # creates a new file to save the data
+    new_file = open(path + "/output/ppi"+str(minw)+".txt", "w")             # creates a new file to save the data
     new_file.writelines(output_interactions)                                # saves the data
     new_file.close()
 
@@ -86,7 +86,7 @@ output_interactions = filter_exec(data_proteins, data_ppi, minw)
 print("finished.\nSaving data...", end = "")
 save_data(output_interactions)
 
-print("finished.\nData saved in", path + "output/"+str(minw)+"ppi.txt.")
+print("finished.\nData saved in", path + "/output/ppi"+str(minw)+".txt")
 print("It took: ", time.thread_time()/60, "min\n")
 
 log.write("Time execution:" + str(time.thread_time()/60) + "min\n")
