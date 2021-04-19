@@ -1,0 +1,2520 @@
+
+Running pandas...
+Loading motif data ...
+  Elapsed time: 0.01 sec.
+Loading expression data ...
+  Elapsed time: 0.29 sec.
+Loading PPI data ...
+Number of PPIs: 10874
+  Elapsed time: 0.01 sec.
+Calculating coexpression network ...
+  Elapsed time: 11.28 sec.
+Creating motif network ...
+  Elapsed time: 0.01 sec.
+Creating PPI network ...
+  Elapsed time: 0.01 sec.
+Normalizing networks ...
+  Elapsed time: 17.86 sec.
+Saving expression matrix and normalized networks ...
+  Elapsed time: 2.44 sec.
+Running PANDA algorithm ...
+step: 0, hamming: 0.15710219472673573
+step: 1, hamming: 0.15149175841184953
+step: 2, hamming: 0.12774983616228466
+step: 3, hamming: 0.12212949099433232
+step: 4, hamming: 0.12033899622682132
+step: 5, hamming: 0.11813293167411165
+step: 6, hamming: 0.11434883488752107
+step: 7, hamming: 0.10887129819944921
+step: 8, hamming: 0.1019824616261901
+step: 9, hamming: 0.09410375660548415
+step: 10, hamming: 0.08566924599896801
+step: 11, hamming: 0.0770640973616944
+step: 12, hamming: 0.06859890725492325
+step: 13, hamming: 0.06050429710232505
+step: 14, hamming: 0.05293692891401171
+step: 15, hamming: 0.04599075766427244
+step: 16, hamming: 0.039709938714272384
+step: 17, hamming: 0.03410124888884391
+step: 18, hamming: 0.029145001902685208
+step: 19, hamming: 0.024804013274960332
+step: 20, hamming: 0.02103060560760257
+step: 21, hamming: 0.017771860254431036
+step: 22, hamming: 0.01497340462894964
+step: 23, hamming: 0.0125819986330857
+step: 24, hamming: 0.010547213653938717
+step: 25, hamming: 0.008822424678098545
+step: 26, hamming: 0.007365309586970747
+step: 27, hamming: 0.006138002952108969
+step: 28, hamming: 0.0051070195254505546
+step: 29, hamming: 0.00424302827533192
+step: 30, hamming: 0.003520541141697502
+step: 31, hamming: 0.002917557454467749
+step: 32, hamming: 0.00241519581446623
+step: 33, hamming: 0.00199733228687413
+step: 34, hamming: 0.0016502571299170847
+step: 35, hamming: 0.0013623575401993662
+step: 36, hamming: 0.001123829879423882
+step: 37, hamming: 0.0009264225293334412
+Running panda took: 850.05 seconds!
+finished.
+Running lioness...
+Loading input data ...
+  Elapsed time: 0.00 sec.
+Running LIONESS for sample 1:
+Computing coexpression network:
+  Elapsed time: 7.83 sec.
+Normalizing networks:
+  Elapsed time: 14.11 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.304906433731998
+step: 1, hamming: 0.4861407304917739
+step: 2, hamming: 0.4139471281164427
+step: 3, hamming: 0.3731951791428615
+step: 4, hamming: 0.33862072601963267
+step: 5, hamming: 0.30690106958698676
+step: 6, hamming: 0.27759075213632173
+step: 7, hamming: 0.25085318597886397
+step: 8, hamming: 0.22692499464734098
+step: 9, hamming: 0.2059611720620259
+step: 10, hamming: 0.18798914336692618
+step: 11, hamming: 0.17289801728069218
+step: 12, hamming: 0.16043872769404638
+step: 13, hamming: 0.1502285800190671
+step: 14, hamming: 0.14176275378737274
+step: 15, hamming: 0.13444158173898785
+step: 16, hamming: 0.1276238277157254
+step: 17, hamming: 0.12070898982209059
+step: 18, hamming: 0.11323574626263874
+step: 19, hamming: 0.10496473335176444
+step: 20, hamming: 0.09590970420364392
+step: 21, hamming: 0.08630034983907911
+step: 22, hamming: 0.07649310527692711
+step: 23, hamming: 0.06686871315772028
+step: 24, hamming: 0.05775264078870453
+step: 25, hamming: 0.04937434286271164
+step: 26, hamming: 0.041861445190384164
+step: 27, hamming: 0.0352553527868051
+step: 28, hamming: 0.029534989090554912
+step: 29, hamming: 0.024639959728463338
+step: 30, hamming: 0.02048914313457826
+step: 31, hamming: 0.016993853112533003
+step: 32, hamming: 0.014066256660579701
+step: 33, hamming: 0.011624214625086563
+step: 34, hamming: 0.009593669227110527
+step: 35, hamming: 0.007909469947443288
+step: 36, hamming: 0.00651527433140828
+step: 37, hamming: 0.00536294815969391
+step: 38, hamming: 0.004411732873556029
+step: 39, hamming: 0.0036273409730274947
+step: 40, hamming: 0.0029810702232517168
+step: 41, hamming: 0.0024489837516475767
+step: 42, hamming: 0.002011176671224179
+step: 43, hamming: 0.0016511345956243318
+step: 44, hamming: 0.00135518101508635
+step: 45, hamming: 0.0011120063234740692
+step: 46, hamming: 0.000912269550683794
+Running panda took: 1068.32 seconds!
+  Elapsed time: 1068.45 sec.
+Saving LIONESS network 1 to lioness_output using npy format:
+  Elapsed time: 0.12 sec.
+Running LIONESS for sample 2:
+Computing coexpression network:
+  Elapsed time: 8.03 sec.
+Normalizing networks:
+  Elapsed time: 14.52 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.315606618733107
+step: 1, hamming: 0.48695074997440363
+step: 2, hamming: 0.4143290772740423
+step: 3, hamming: 0.3735407998166643
+step: 4, hamming: 0.3389486773635997
+step: 5, hamming: 0.30720994865420925
+step: 6, hamming: 0.2778791355070672
+step: 7, hamming: 0.2511213483683285
+step: 8, hamming: 0.2271751658953868
+step: 9, hamming: 0.20619660538069023
+step: 10, hamming: 0.18821311367297797
+step: 11, hamming: 0.17311318660321312
+step: 12, hamming: 0.1606468993280296
+step: 13, hamming: 0.15043049589768356
+step: 14, hamming: 0.1419579473382704
+step: 15, hamming: 0.134628362369643
+step: 16, hamming: 0.12779949560467468
+step: 17, hamming: 0.12087043252501611
+step: 18, hamming: 0.11338015385775373
+step: 19, hamming: 0.10509030126406489
+step: 20, hamming: 0.09601599388719571
+step: 21, hamming: 0.08638827780466107
+step: 22, hamming: 0.07656458519394958
+step: 23, hamming: 0.06692616001709766
+step: 24, hamming: 0.05779853382333746
+step: 25, hamming: 0.04941094875627286
+step: 26, hamming: 0.041890689156465814
+step: 27, hamming: 0.035278794441544664
+step: 28, hamming: 0.02955385747796155
+step: 29, hamming: 0.024655209952728435
+step: 30, hamming: 0.020501514580118608
+step: 31, hamming: 0.017003919863459373
+step: 32, hamming: 0.014074467630958709
+step: 33, hamming: 0.011630923904862537
+step: 34, hamming: 0.009599158545261088
+step: 35, hamming: 0.007913965207480408
+step: 36, hamming: 0.006518957808962623
+step: 37, hamming: 0.005365967654569538
+step: 38, hamming: 0.004414208678037496
+step: 39, hamming: 0.0036293712406141503
+step: 40, hamming: 0.002982735206889841
+step: 41, hamming: 0.0024503491544556394
+step: 42, hamming: 0.002012296340822763
+step: 43, hamming: 0.0016520526887858261
+step: 44, hamming: 0.0013559337556803353
+step: 45, hamming: 0.0011126234335270334
+step: 46, hamming: 0.0009127754190582153
+Running panda took: 1079.92 seconds!
+  Elapsed time: 1080.05 sec.
+Saving LIONESS network 2 to lioness_output using npy format:
+  Elapsed time: 0.11 sec.
+Running LIONESS for sample 3:
+Computing coexpression network:
+  Elapsed time: 8.00 sec.
+Normalizing networks:
+  Elapsed time: 14.53 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.325726376212988
+step: 1, hamming: 0.4875656838451147
+step: 2, hamming: 0.4149622330783014
+step: 3, hamming: 0.3740762091943762
+step: 4, hamming: 0.33940240678910916
+step: 5, hamming: 0.30760050141759293
+step: 6, hamming: 0.27822497954370556
+step: 7, hamming: 0.2514346669489603
+step: 8, hamming: 0.22746338659471002
+step: 9, hamming: 0.20646456574288918
+step: 10, hamming: 0.1884644179872581
+step: 11, hamming: 0.1733507141559929
+step: 12, hamming: 0.16087274723982545
+step: 13, hamming: 0.15064577833855655
+step: 14, hamming: 0.14216263026028927
+step: 15, hamming: 0.13482124595091896
+step: 16, hamming: 0.127978450418209
+step: 17, hamming: 0.12103294808587405
+step: 18, hamming: 0.11352405067199647
+step: 19, hamming: 0.10521436614030655
+step: 20, hamming: 0.09612035527017174
+step: 21, hamming: 0.08647430669890813
+step: 22, hamming: 0.07663449021307224
+step: 23, hamming: 0.06698249369977287
+step: 24, hamming: 0.05784379080657976
+step: 25, hamming: 0.04944733011516947
+step: 26, hamming: 0.04192001720579786
+step: 27, hamming: 0.03530252331164586
+step: 28, hamming: 0.02957312700444593
+step: 29, hamming: 0.024670909192978503
+step: 30, hamming: 0.02051433901577259
+step: 31, hamming: 0.017014417334635212
+step: 32, hamming: 0.014083073244140812
+step: 33, hamming: 0.011637986011342928
+step: 34, hamming: 0.009604957980379341
+step: 35, hamming: 0.007918729675157738
+step: 36, hamming: 0.00652287279851877
+step: 37, hamming: 0.00536918479234971
+step: 38, hamming: 0.00441685220251553
+step: 39, hamming: 0.00363154314372348
+step: 40, hamming: 0.002984519314703517
+step: 41, hamming: 0.002451814412057402
+step: 42, hamming: 0.0020134994732439273
+step: 43, hamming: 0.0016530403731627639
+step: 44, hamming: 0.0013567443976200278
+step: 45, hamming: 0.0011132886292784955
+step: 46, hamming: 0.0009133211566752248
+Running panda took: 1084.28 seconds!
+  Elapsed time: 1084.42 sec.
+Saving LIONESS network 3 to lioness_output using npy format:
+  Elapsed time: 0.11 sec.
+Running LIONESS for sample 4:
+Computing coexpression network:
+  Elapsed time: 7.99 sec.
+Normalizing networks:
+  Elapsed time: 14.47 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.292940136076649
+step: 1, hamming: 0.4850755185798658
+step: 2, hamming: 0.41301859282820425
+step: 3, hamming: 0.37233870501432564
+step: 4, hamming: 0.33783117851335587
+step: 5, hamming: 0.30617299220371713
+step: 6, hamming: 0.27691931640336664
+step: 7, hamming: 0.25023209676158603
+step: 8, hamming: 0.226347909407625
+step: 9, hamming: 0.20542187437541734
+step: 10, hamming: 0.18748121073496032
+step: 11, hamming: 0.17241527336936435
+step: 12, hamming: 0.1599758361984835
+step: 13, hamming: 0.14978164584718176
+step: 14, hamming: 0.141329833876637
+step: 15, hamming: 0.13402298297615467
+step: 16, hamming: 0.1272220123903981
+step: 17, hamming: 0.12032810136614254
+step: 18, hamming: 0.11288059067044297
+step: 19, hamming: 0.10463967553154432
+step: 20, hamming: 0.09561773669141228
+step: 21, hamming: 0.08604262634718962
+step: 22, hamming: 0.07626898994766766
+step: 23, hamming: 0.06667618327341854
+step: 24, hamming: 0.05758881173691096
+step: 25, hamming: 0.04923594781965865
+step: 26, hamming: 0.04174518145272691
+step: 27, hamming: 0.03515809386180941
+step: 28, hamming: 0.02945389495765761
+step: 29, hamming: 0.024572518631228363
+step: 30, hamming: 0.020433173087070603
+step: 31, hamming: 0.016947481975560924
+step: 32, hamming: 0.014027892386971887
+step: 33, hamming: 0.011592512287480518
+step: 34, hamming: 0.009567498394597007
+step: 35, hamming: 0.007887884196742702
+step: 36, hamming: 0.006497483779754238
+step: 37, hamming: 0.005348295230671693
+step: 38, hamming: 0.004399671249933408
+step: 39, hamming: 0.0036174175419505703
+step: 40, hamming: 0.002972909724628412
+step: 41, hamming: 0.0024422757845596814
+step: 42, hamming: 0.0020056647573718786
+step: 43, hamming: 0.001646607007612802
+step: 44, hamming: 0.0013514631101751284
+step: 45, hamming: 0.0011089541517349546
+step: 46, hamming: 0.0009097645368631193
+Running panda took: 1067.60 seconds!
+  Elapsed time: 1067.74 sec.
+Saving LIONESS network 4 to lioness_output using npy format:
+  Elapsed time: 0.11 sec.
+Running LIONESS for sample 5:
+Computing coexpression network:
+  Elapsed time: 7.93 sec.
+Normalizing networks:
+  Elapsed time: 14.30 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.312363042694658
+step: 1, hamming: 0.4864073730104015
+step: 2, hamming: 0.4136281911826992
+step: 3, hamming: 0.3728469281603972
+step: 4, hamming: 0.3382757385920524
+step: 5, hamming: 0.30657136474381
+step: 6, hamming: 0.27728432324080154
+step: 7, hamming: 0.2505721757074083
+step: 8, hamming: 0.22666865082114337
+step: 9, hamming: 0.20572725005752449
+step: 10, hamming: 0.1877745008848497
+step: 11, hamming: 0.17269895376453706
+step: 12, hamming: 0.16025129751479986
+step: 13, hamming: 0.15004882587428087
+step: 14, hamming: 0.14158693346166315
+step: 15, hamming: 0.13426647779282716
+step: 16, hamming: 0.12744711734594596
+step: 17, hamming: 0.12052973639524238
+step: 18, hamming: 0.1130546455336655
+step: 19, hamming: 0.10478405308275204
+step: 20, hamming: 0.09573284023880685
+step: 21, hamming: 0.08613109986168646
+step: 22, hamming: 0.07633491583822967
+step: 23, hamming: 0.06672414161972531
+step: 24, hamming: 0.05762313456173078
+step: 25, hamming: 0.04926030200270033
+step: 26, hamming: 0.04176243967021668
+step: 27, hamming: 0.03517038595960304
+step: 28, hamming: 0.02946273955703523
+step: 29, hamming: 0.02457897005915218
+step: 30, hamming: 0.020437951778953783
+step: 31, hamming: 0.016951076991602164
+step: 32, hamming: 0.014030636486485028
+step: 33, hamming: 0.011594633981525672
+step: 34, hamming: 0.009569156892419045
+step: 35, hamming: 0.00788919239440266
+step: 36, hamming: 0.006498523249379557
+step: 37, hamming: 0.005349126017971244
+step: 38, hamming: 0.004400338333832357
+step: 39, hamming: 0.003617955145115381
+step: 40, hamming: 0.0029733442319986063
+step: 41, hamming: 0.002442627766641187
+step: 42, hamming: 0.0020059504010430298
+step: 43, hamming: 0.0016468391477553242
+step: 44, hamming: 0.0013516519847374517
+step: 45, hamming: 0.00110910796634926
+step: 46, hamming: 0.0009098898935726723
+Running panda took: 1047.97 seconds!
+  Elapsed time: 1048.10 sec.
+Saving LIONESS network 5 to lioness_output using npy format:
+  Elapsed time: 0.11 sec.
+Running LIONESS for sample 6:
+Computing coexpression network:
+  Elapsed time: 7.98 sec.
+Normalizing networks:
+  Elapsed time: 14.50 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.326132613936693
+step: 1, hamming: 0.48779135210306296
+step: 2, hamming: 0.4149753366074651
+step: 3, hamming: 0.3741052933116514
+step: 4, hamming: 0.33944799475079673
+step: 5, hamming: 0.3076526210096467
+step: 6, hamming: 0.2782787058628915
+step: 7, hamming: 0.2514883061779818
+step: 8, hamming: 0.22751669566363378
+step: 9, hamming: 0.2065179764477903
+step: 10, hamming: 0.18851857063081423
+step: 11, hamming: 0.17340632864306918
+step: 12, hamming: 0.1609305961610141
+step: 13, hamming: 0.15070660487543386
+step: 14, hamming: 0.14222698420690552
+step: 15, hamming: 0.13488935357671525
+step: 16, hamming: 0.12805008332711398
+step: 17, hamming: 0.12110733224999605
+step: 18, hamming: 0.11359986417264224
+step: 19, hamming: 0.1052898701028608
+step: 20, hamming: 0.09619364125602353
+step: 21, hamming: 0.0865436002572433
+step: 22, hamming: 0.07669840369980041
+step: 23, hamming: 0.06704014215028889
+step: 24, hamming: 0.05789480283789194
+step: 25, hamming: 0.04949176154175427
+step: 26, hamming: 0.04195822662926842
+step: 27, hamming: 0.035335051687118264
+step: 28, hamming: 0.02960060070490474
+step: 29, hamming: 0.024693971623082737
+step: 30, hamming: 0.020533606982432947
+step: 31, hamming: 0.0170304565624072
+step: 32, hamming: 0.01409638728318986
+step: 33, hamming: 0.011649013772644141
+step: 34, hamming: 0.009614076437755728
+step: 35, hamming: 0.007926259143366657
+step: 36, hamming: 0.006529083355540319
+step: 37, hamming: 0.0053743028552523
+step: 38, hamming: 0.004421066794318461
+step: 39, hamming: 0.00363501155730684
+step: 40, hamming: 0.0029873721141045542
+step: 41, hamming: 0.0024541597671394917
+step: 42, hamming: 0.0020154268582078983
+step: 43, hamming: 0.0016546237038391923
+step: 44, hamming: 0.001358044674128752
+step: 45, hamming: 0.0011143561475697656
+step: 46, hamming: 0.0009141973562695529
+Running panda took: 1067.24 seconds!
+  Elapsed time: 1067.38 sec.
+Saving LIONESS network 6 to lioness_output using npy format:
+  Elapsed time: 0.11 sec.
+Running LIONESS for sample 7:
+Computing coexpression network:
+  Elapsed time: 7.92 sec.
+Normalizing networks:
+  Elapsed time: 14.31 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.306835142250309
+step: 1, hamming: 0.48626836543497476
+step: 2, hamming: 0.41368006824357195
+step: 3, hamming: 0.3729026768910483
+step: 4, hamming: 0.3383264041309021
+step: 5, hamming: 0.3066121120576339
+step: 6, hamming: 0.27731721524102476
+step: 7, hamming: 0.2505994756851378
+step: 8, hamming: 0.2266913601736442
+step: 9, hamming: 0.2057459748512776
+step: 10, hamming: 0.1877899295311292
+step: 11, hamming: 0.17271204828999695
+step: 12, hamming: 0.1602633082227341
+step: 13, hamming: 0.1500612576390782
+step: 14, hamming: 0.14160149801270547
+step: 15, hamming: 0.13428496927801878
+step: 16, hamming: 0.12747115258180228
+step: 17, hamming: 0.12056041554862319
+step: 18, hamming: 0.11309222683059082
+step: 19, hamming: 0.10482778846650988
+step: 20, hamming: 0.09578108510767355
+step: 21, hamming: 0.08618167185648107
+step: 22, hamming: 0.07638555370590913
+step: 23, hamming: 0.06677289046013885
+step: 24, hamming: 0.057668558732429785
+step: 25, hamming: 0.04930152414201972
+step: 26, hamming: 0.041799067290703054
+step: 27, hamming: 0.03520239201461543
+step: 28, hamming: 0.02949034172922187
+step: 29, hamming: 0.0246025302029453
+step: 30, hamming: 0.020457900557853216
+step: 31, hamming: 0.016967862415435575
+step: 32, hamming: 0.014044691358355942
+step: 33, hamming: 0.011606357646583387
+step: 34, hamming: 0.009578906688219554
+step: 35, hamming: 0.007897281345194093
+step: 36, hamming: 0.006505221444779357
+step: 37, hamming: 0.005354663957775865
+step: 38, hamming: 0.004404911150529074
+step: 39, hamming: 0.0036217270288187524
+step: 40, hamming: 0.002976452692603915
+step: 41, hamming: 0.0024451875523229197
+step: 42, hamming: 0.002008056991567482
+step: 43, hamming: 0.0016485718062780614
+step: 44, hamming: 0.0013530763893508531
+step: 45, hamming: 0.0011102784557874097
+step: 46, hamming: 0.0009108513672510982
+Running panda took: 1066.58 seconds!
+  Elapsed time: 1066.71 sec.
+Saving LIONESS network 7 to lioness_output using npy format:
+  Elapsed time: 0.11 sec.
+Running LIONESS for sample 8:
+Computing coexpression network:
+  Elapsed time: 7.96 sec.
+Normalizing networks:
+  Elapsed time: 14.38 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.206268681658248
+step: 1, hamming: 0.47929411678049927
+step: 2, hamming: 0.4079435937355085
+step: 3, hamming: 0.3678086828358748
+step: 4, hamming: 0.33372102306968277
+step: 5, hamming: 0.30241782584388166
+step: 6, hamming: 0.27347615509965106
+step: 7, hamming: 0.24706185012230858
+step: 8, hamming: 0.22341081841400467
+step: 9, hamming: 0.2026780151769222
+step: 10, hamming: 0.18489283559531972
+step: 11, hamming: 0.1699491057680632
+step: 12, hamming: 0.15760573179131399
+step: 13, hamming: 0.1474912787318251
+step: 14, hamming: 0.13911485307421304
+step: 15, hamming: 0.13189180616900925
+step: 16, hamming: 0.12519435273321328
+step: 17, hamming: 0.11843075021569338
+step: 18, hamming: 0.11114107552070793
+step: 19, hamming: 0.10307952882344144
+step: 20, hamming: 0.09424779001157439
+step: 21, hamming: 0.08486173782818263
+step: 22, hamming: 0.07526595684232172
+step: 23, hamming: 0.06583335228568794
+step: 24, hamming: 0.056885750860790785
+step: 25, hamming: 0.04865220020619501
+step: 26, hamming: 0.04126187666396629
+step: 27, hamming: 0.03475864192075828
+step: 28, hamming: 0.029124109302365375
+step: 29, hamming: 0.0243004529810274
+step: 30, hamming: 0.020208850994216643
+step: 31, hamming: 0.016762609777566682
+step: 32, hamming: 0.013875593412376912
+step: 33, hamming: 0.01146709386314572
+step: 34, hamming: 0.009464252831649237
+step: 35, hamming: 0.007802921035781058
+step: 36, hamming: 0.006427589475127596
+step: 37, hamming: 0.005290816431790105
+step: 38, hamming: 0.00435241794954923
+step: 39, hamming: 0.003578582837489286
+step: 40, hamming: 0.0029410033748386104
+step: 41, hamming: 0.0024160692168415797
+step: 42, hamming: 0.001984145551919654
+step: 43, hamming: 0.0016289412280059588
+step: 44, hamming: 0.0013369641324824527
+step: 45, hamming: 0.001097056880112066
+step: 46, hamming: 0.0009000040828250389
+Running panda took: 1078.15 seconds!
+  Elapsed time: 1078.28 sec.
+Saving LIONESS network 8 to lioness_output using npy format:
+  Elapsed time: 0.11 sec.
+Running LIONESS for sample 9:
+Computing coexpression network:
+  Elapsed time: 8.07 sec.
+Normalizing networks:
+  Elapsed time: 14.53 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.317071563122189
+step: 1, hamming: 0.4869876737571481
+step: 2, hamming: 0.4143980029579184
+step: 3, hamming: 0.37360103756079677
+step: 4, hamming: 0.3389914741041077
+step: 5, hamming: 0.3072367379056457
+step: 6, hamming: 0.27789785942933276
+step: 7, hamming: 0.2511369118603807
+step: 8, hamming: 0.2271895578924254
+step: 9, hamming: 0.2062102555297659
+step: 10, hamming: 0.1882260187901492
+step: 11, hamming: 0.1731253172250202
+step: 12, hamming: 0.16065821760483198
+step: 13, hamming: 0.1504408972439296
+step: 14, hamming: 0.14196719904094351
+step: 15, hamming: 0.13463610182679134
+step: 16, hamming: 0.12780529060464274
+step: 17, hamming: 0.12087392802530117
+step: 18, hamming: 0.11338113429502254
+step: 19, hamming: 0.10508878454536626
+step: 20, hamming: 0.09601229082147189
+step: 21, hamming: 0.08638290940631814
+step: 22, hamming: 0.07655815749960504
+step: 23, hamming: 0.06691925001136793
+step: 24, hamming: 0.05779161320570222
+step: 25, hamming: 0.0494043543866522
+step: 26, hamming: 0.0418846285388707
+step: 27, hamming: 0.0352733705540941
+step: 28, hamming: 0.029549098274704196
+step: 29, hamming: 0.024651095039779105
+step: 30, hamming: 0.020497995870974853
+step: 31, hamming: 0.017000936116715246
+step: 32, hamming: 0.014071953712182849
+step: 33, hamming: 0.011628816328000263
+step: 34, hamming: 0.009597398491965146
+step: 35, hamming: 0.007912499877644833
+step: 36, hamming: 0.006517740835219686
+step: 37, hamming: 0.0053649589508998905
+step: 38, hamming: 0.004413373953367391
+step: 39, hamming: 0.0036286814141236515
+step: 40, hamming: 0.002982165766259506
+step: 41, hamming: 0.002449879540592413
+step: 42, hamming: 0.0020119093691576447
+step: 43, hamming: 0.0016517340411924416
+step: 44, hamming: 0.0013556715287429846
+step: 45, hamming: 0.0011124077523201883
+step: 46, hamming: 0.0009125981048465595
+Running panda took: 1109.70 seconds!
+  Elapsed time: 1109.84 sec.
+Saving LIONESS network 9 to lioness_output using npy format:
+  Elapsed time: 0.11 sec.
+Running LIONESS for sample 10:
+Computing coexpression network:
+  Elapsed time: 8.00 sec.
+Normalizing networks:
+  Elapsed time: 14.40 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.3135975211305935
+step: 1, hamming: 0.48678490919746464
+step: 2, hamming: 0.4142647241290281
+step: 3, hamming: 0.3734901347386996
+step: 4, hamming: 0.33889203501408616
+step: 5, hamming: 0.3071446620676886
+step: 6, hamming: 0.2778113998177584
+step: 7, hamming: 0.25105497369411583
+step: 8, hamming: 0.22711125214206937
+step: 9, hamming: 0.20613524487096452
+step: 10, hamming: 0.18815397616145782
+step: 11, hamming: 0.17305585651718827
+step: 12, hamming: 0.16059102036747186
+step: 13, hamming: 0.15037586173752673
+step: 14, hamming: 0.14190456528948012
+step: 15, hamming: 0.13457648201342962
+step: 16, hamming: 0.1277495978963105
+step: 17, hamming: 0.1208231615550413
+step: 18, hamming: 0.11333619275903893
+step: 19, hamming: 0.10505021284456226
+step: 20, hamming: 0.09598014856901255
+step: 21, hamming: 0.08635679552769909
+step: 22, hamming: 0.07653734920350228
+step: 23, hamming: 0.0669028795907912
+step: 24, hamming: 0.057778817187367465
+step: 25, hamming: 0.049394364967317576
+step: 26, hamming: 0.04187681083275168
+step: 27, hamming: 0.03526722323254562
+step: 28, hamming: 0.029544236242263502
+step: 29, hamming: 0.02464722658072412
+step: 30, hamming: 0.0204949008997865
+step: 31, hamming: 0.016998447973061003
+step: 32, hamming: 0.014069945301531758
+step: 33, hamming: 0.011627189822115535
+step: 34, hamming: 0.009596077829868562
+step: 35, hamming: 0.007911425361709377
+step: 36, hamming: 0.006516865224323437
+step: 37, hamming: 0.005364244573148232
+step: 38, hamming: 0.004412790594407699
+step: 39, hamming: 0.0036282047245602667
+step: 40, hamming: 0.0029817760435786145
+step: 41, hamming: 0.002449560797243549
+step: 42, hamming: 0.0020116486042500064
+step: 43, hamming: 0.0016515206630267432
+step: 44, hamming: 0.0013554968995033371
+step: 45, hamming: 0.0011122648195124815
+step: 46, hamming: 0.0009124811060902881
+Running panda took: 1031.53 seconds!
+  Elapsed time: 1031.66 sec.
+Saving LIONESS network 10 to lioness_output using npy format:
+  Elapsed time: 0.11 sec.
+Running LIONESS for sample 11:
+Computing coexpression network:
+  Elapsed time: 8.06 sec.
+Normalizing networks:
+  Elapsed time: 14.58 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.307172287046938
+step: 1, hamming: 0.48633030466324595
+step: 2, hamming: 0.41385301766963406
+step: 3, hamming: 0.3731086417297145
+step: 4, hamming: 0.3385437896487368
+step: 5, hamming: 0.30682942238259764
+step: 6, hamming: 0.27752396897235126
+step: 7, hamming: 0.250791083076244
+step: 8, hamming: 0.2268676524450505
+step: 9, hamming: 0.20590829525553012
+step: 10, hamming: 0.18794019579617763
+step: 11, hamming: 0.1728522644595088
+step: 12, hamming: 0.16039532240904372
+step: 13, hamming: 0.1501865942560695
+step: 14, hamming: 0.14172124598592903
+step: 15, hamming: 0.1343996702506261
+step: 16, hamming: 0.12758076217033534
+step: 17, hamming: 0.1206643865691933
+step: 18, hamming: 0.11318969456824227
+step: 19, hamming: 0.10491781402837899
+step: 20, hamming: 0.0958628903663877
+step: 21, hamming: 0.08625480160569772
+step: 22, hamming: 0.07644993526797947
+step: 23, hamming: 0.0668288050560164
+step: 24, hamming: 0.05771655881758914
+step: 25, hamming: 0.049342334945881854
+step: 26, hamming: 0.041833496699386526
+step: 27, hamming: 0.03523125983949612
+step: 28, hamming: 0.029514431111090478
+step: 29, hamming: 0.02462255863780749
+step: 30, hamming: 0.020474506327466776
+step: 31, hamming: 0.016981601294169407
+step: 32, hamming: 0.014056039924551723
+step: 33, hamming: 0.01161572005322074
+step: 34, hamming: 0.00958662293553914
+step: 35, hamming: 0.007903635846689775
+step: 36, hamming: 0.0065104511351692625
+step: 37, hamming: 0.005358965616620537
+step: 38, hamming: 0.004408447835670613
+step: 39, hamming: 0.003624633617784684
+step: 40, hamming: 0.002978840602544836
+step: 41, hamming: 0.002447148723340775
+step: 42, hamming: 0.00200966722835011
+step: 43, hamming: 0.001649893565391932
+step: 44, hamming: 0.0013541610992281402
+step: 45, hamming: 0.0011111684405684477
+step: 46, hamming: 0.0009115814421367152
+Running panda took: 1082.20 seconds!
+  Elapsed time: 1082.34 sec.
+Saving LIONESS network 11 to lioness_output using npy format:
+  Elapsed time: 0.11 sec.
+Running LIONESS for sample 12:
+Computing coexpression network:
+  Elapsed time: 8.06 sec.
+Normalizing networks:
+  Elapsed time: 14.63 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.3136749058528245
+step: 1, hamming: 0.4865208333843922
+step: 2, hamming: 0.4141350217408396
+step: 3, hamming: 0.3733446598391457
+step: 4, hamming: 0.33874436068830616
+step: 5, hamming: 0.30700624626936296
+step: 6, hamming: 0.27768667420067183
+step: 7, hamming: 0.2509451896175036
+step: 8, hamming: 0.2270155485980997
+step: 9, hamming: 0.2060513058886743
+step: 10, hamming: 0.18807904408161275
+step: 11, hamming: 0.17298756914342409
+step: 12, hamming: 0.16052748930270047
+step: 13, hamming: 0.1503156505719228
+step: 14, hamming: 0.14184664193457877
+step: 15, hamming: 0.13452021663403071
+step: 16, hamming: 0.12769474590203608
+step: 17, hamming: 0.12076985447315851
+step: 18, hamming: 0.11328489417537375
+step: 19, hamming: 0.10500151941355113
+step: 20, hamming: 0.09593468004817071
+step: 21, hamming: 0.08631507587348028
+step: 22, hamming: 0.07649971631529624
+step: 23, hamming: 0.06686945489778151
+step: 24, hamming: 0.057749526413235885
+step: 25, hamming: 0.04936898576034924
+step: 26, hamming: 0.041855026084089565
+step: 27, hamming: 0.0352486680122594
+step: 28, hamming: 0.02952853211037966
+step: 29, hamming: 0.024634004920239958
+step: 30, hamming: 0.020483817077270552
+step: 31, hamming: 0.016989189054481907
+step: 32, hamming: 0.014062233198186946
+step: 33, hamming: 0.011620781399496913
+step: 34, hamming: 0.009590763188537658
+step: 35, hamming: 0.007907025031978413
+step: 36, hamming: 0.0065132269077919245
+step: 37, hamming: 0.005361239798646762
+step: 38, hamming: 0.00441031149215823
+step: 39, hamming: 0.0036261610682286703
+step: 40, hamming: 0.0029800925877252805
+step: 41, hamming: 0.002448174948035491
+step: 42, hamming: 0.002010508396411061
+step: 43, hamming: 0.001650583026003029
+step: 44, hamming: 0.0013547261866457304
+step: 45, hamming: 0.0011116315643106855
+step: 46, hamming: 0.0009119609765693967
+Running panda took: 1066.70 seconds!
+  Elapsed time: 1066.84 sec.
+Saving LIONESS network 12 to lioness_output using npy format:
+  Elapsed time: 0.11 sec.
+Running LIONESS for sample 13:
+Computing coexpression network:
+  Elapsed time: 8.01 sec.
+Normalizing networks:
+  Elapsed time: 15.48 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.308680815350482
+step: 1, hamming: 0.48642324791669905
+step: 2, hamming: 0.4138747247412834
+step: 3, hamming: 0.37311298058780834
+step: 4, hamming: 0.3385497009889541
+step: 5, hamming: 0.3068401829736976
+step: 6, hamming: 0.27753960156555724
+step: 7, hamming: 0.25080989338772464
+step: 8, hamming: 0.2268874107147241
+step: 9, hamming: 0.20592801242437234
+step: 10, hamming: 0.18795964085397454
+step: 11, hamming: 0.17287148184773699
+step: 12, hamming: 0.16041441535545373
+step: 13, hamming: 0.15020563344337445
+step: 14, hamming: 0.14174020452588715
+step: 15, hamming: 0.13441841150423547
+step: 16, hamming: 0.1275990669031849
+step: 17, hamming: 0.12068196611691695
+step: 18, hamming: 0.11320623984588751
+step: 19, hamming: 0.1049330526320335
+step: 20, hamming: 0.09587663222525726
+step: 21, hamming: 0.08626697120508905
+step: 22, hamming: 0.07646054140717545
+step: 23, hamming: 0.06683792849077023
+step: 24, hamming: 0.05772432713363407
+step: 25, hamming: 0.049348897736799076
+step: 26, hamming: 0.04183900771418942
+step: 27, hamming: 0.03523586607320743
+step: 28, hamming: 0.02951826709987196
+step: 29, hamming: 0.024625744137286475
+step: 30, hamming: 0.020477145823076505
+step: 31, hamming: 0.01698378464410656
+step: 32, hamming: 0.014057843580023934
+step: 33, hamming: 0.011617208474936492
+step: 34, hamming: 0.00958785016673585
+step: 35, hamming: 0.007904647003038223
+step: 36, hamming: 0.006511283748650523
+step: 37, hamming: 0.005359650846121323
+step: 38, hamming: 0.004409011501800113
+step: 39, hamming: 0.0036250970882835826
+step: 40, hamming: 0.002979221541195858
+step: 41, hamming: 0.002447461716900084
+step: 42, hamming: 0.0020099243135087374
+step: 43, hamming: 0.0016501046672210758
+step: 44, hamming: 0.0013543343962953707
+step: 45, hamming: 0.001111310668530368
+step: 46, hamming: 0.0009116981451325246
+Running panda took: 1021.38 seconds!
+  Elapsed time: 1021.52 sec.
+Saving LIONESS network 13 to lioness_output using npy format:
+  Elapsed time: 0.14 sec.
+Running LIONESS for sample 14:
+Computing coexpression network:
+  Elapsed time: 8.10 sec.
+Normalizing networks:
+  Elapsed time: 18.72 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.296832817932025
+step: 1, hamming: 0.48564512580519537
+step: 2, hamming: 0.4131675382180205
+step: 3, hamming: 0.3725006232463059
+step: 4, hamming: 0.3379881126318158
+step: 5, hamming: 0.30631866997933216
+step: 6, hamming: 0.27705637142387346
+step: 7, hamming: 0.25036313518224174
+step: 8, hamming: 0.22647344462980415
+step: 9, hamming: 0.2055415697870044
+step: 10, hamming: 0.18759511699052164
+step: 11, hamming: 0.17252384158626122
+step: 12, hamming: 0.16007972434735382
+step: 13, hamming: 0.14988144205750065
+step: 14, hamming: 0.1414258388010579
+step: 15, hamming: 0.13411506657487
+step: 16, hamming: 0.1273095884565336
+step: 17, hamming: 0.12041024962467017
+step: 18, hamming: 0.11295631199765019
+step: 19, hamming: 0.10470811219420546
+step: 20, hamming: 0.09567837120533355
+step: 21, hamming: 0.08609537039610665
+step: 22, hamming: 0.07631415421024138
+step: 23, hamming: 0.0667143721563122
+step: 24, hamming: 0.057620796934362624
+step: 25, hamming: 0.04926255782214188
+step: 26, hamming: 0.04176722224897368
+step: 27, hamming: 0.03517630137008589
+step: 28, hamming: 0.02946891298621874
+step: 29, hamming: 0.024584895119976573
+step: 30, hamming: 0.020443366770118432
+step: 31, hamming: 0.016955873768282254
+step: 32, hamming: 0.01403479759677348
+step: 33, hamming: 0.011598191656030512
+step: 34, hamming: 0.00957216750909024
+step: 35, hamming: 0.007891721213741482
+step: 36, hamming: 0.006500635847327275
+step: 37, hamming: 0.005350883778654184
+step: 38, hamming: 0.00440179642016019
+step: 39, hamming: 0.0036191618503331863
+step: 40, hamming: 0.0029743411110033243
+step: 41, hamming: 0.002443450154662653
+step: 42, hamming: 0.002006628089036339
+step: 43, hamming: 0.0016473970978949587
+step: 44, hamming: 0.0013521110182657496
+step: 45, hamming: 0.001109485391897491
+step: 46, hamming: 0.0009102000628466934
+Running panda took: 1039.98 seconds!
+  Elapsed time: 1040.12 sec.
+Saving LIONESS network 14 to lioness_output using npy format:
+  Elapsed time: 0.14 sec.
+Running LIONESS for sample 15:
+Computing coexpression network:
+  Elapsed time: 8.62 sec.
+Normalizing networks:
+  Elapsed time: 15.82 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.3119840348530305
+step: 1, hamming: 0.48683513506044496
+step: 2, hamming: 0.4142315915448177
+step: 3, hamming: 0.3734401610672489
+step: 4, hamming: 0.3388397611645183
+step: 5, hamming: 0.3070912020494887
+step: 6, hamming: 0.2777584096600384
+step: 7, hamming: 0.2510042622962048
+step: 8, hamming: 0.22706374541115504
+step: 9, hamming: 0.2060908244540758
+step: 10, hamming: 0.18811224379690475
+step: 11, hamming: 0.17301638302397682
+step: 12, hamming: 0.1605534082402861
+step: 13, hamming: 0.15033982045449282
+step: 14, hamming: 0.1418699792934916
+step: 15, hamming: 0.13454346006781054
+step: 16, hamming: 0.12771844710199964
+step: 17, hamming: 0.12079431892895773
+step: 18, hamming: 0.11331009643196457
+step: 19, hamming: 0.10502718149762537
+step: 20, hamming: 0.09596030386339394
+step: 21, hamming: 0.08634004864904855
+step: 22, hamming: 0.07652344456096179
+step: 23, hamming: 0.06689146408807327
+step: 24, hamming: 0.05776950715090865
+step: 25, hamming: 0.049386793528822165
+step: 26, hamming: 0.04187065421599932
+step: 27, hamming: 0.035262209753667347
+step: 28, hamming: 0.029540144789652802
+step: 29, hamming: 0.024643880103261972
+step: 30, hamming: 0.02049215844998263
+step: 31, hamming: 0.016996197199137447
+step: 32, hamming: 0.01406809614728477
+step: 33, hamming: 0.011625669641184838
+step: 34, hamming: 0.009594827658180188
+step: 35, hamming: 0.007910397109809663
+step: 36, hamming: 0.006516019517655291
+step: 37, hamming: 0.0053635490856269365
+step: 38, hamming: 0.004412218750352332
+step: 39, hamming: 0.003627734646040632
+step: 40, hamming: 0.0029813897162381886
+step: 41, hamming: 0.0024492433798531115
+step: 42, hamming: 0.002011387871647075
+step: 43, hamming: 0.0016513065458050274
+step: 44, hamming: 0.0013553211058464102
+step: 45, hamming: 0.0011121205230036908
+step: 46, hamming: 0.000912362688937892
+Running panda took: 1054.99 seconds!
+  Elapsed time: 1055.13 sec.
+Saving LIONESS network 15 to lioness_output using npy format:
+  Elapsed time: 0.12 sec.
+Running LIONESS for sample 16:
+Computing coexpression network:
+  Elapsed time: 7.95 sec.
+Normalizing networks:
+  Elapsed time: 33.11 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.3058318948149115
+step: 1, hamming: 0.4861083455561858
+step: 2, hamming: 0.4136748538824376
+step: 3, hamming: 0.372974825338404
+step: 4, hamming: 0.3384411654385509
+step: 5, hamming: 0.3067451228791612
+step: 6, hamming: 0.2774537378289915
+step: 7, hamming: 0.2507312762581575
+step: 8, hamming: 0.2268148354643004
+step: 9, hamming: 0.20586002219657762
+step: 10, hamming: 0.1878947036825978
+step: 11, hamming: 0.17280824274313578
+step: 12, hamming: 0.16035181200124202
+step: 13, hamming: 0.15014294941213735
+step: 14, hamming: 0.14167711712404735
+step: 15, hamming: 0.1343550179957932
+step: 16, hamming: 0.1275358732778118
+step: 17, hamming: 0.12061982212516743
+step: 18, hamming: 0.11314619796584512
+step: 19, hamming: 0.10487618502968583
+step: 20, hamming: 0.09582386189092525
+step: 21, hamming: 0.08621894137315679
+step: 22, hamming: 0.0764175945327089
+step: 23, hamming: 0.06680011651480505
+step: 24, hamming: 0.05769146903127666
+step: 25, hamming: 0.049320653263160104
+step: 26, hamming: 0.041814944624835024
+step: 27, hamming: 0.03521551337129448
+step: 28, hamming: 0.029501152943966245
+step: 29, hamming: 0.024611420211392593
+step: 30, hamming: 0.020465201423292886
+step: 31, hamming: 0.016973853470484624
+step: 32, hamming: 0.014049605314206851
+step: 33, hamming: 0.011610387077787082
+step: 34, hamming: 0.009582210311685284
+step: 35, hamming: 0.007899989662632494
+step: 36, hamming: 0.006507441606311652
+step: 37, hamming: 0.005356483884624291
+step: 38, hamming: 0.004406402946416328
+step: 39, hamming: 0.003622949814455453
+step: 40, hamming: 0.0029774549365455287
+step: 41, hamming: 0.0024460089925302025
+step: 42, hamming: 0.002008730209311927
+step: 43, hamming: 0.0016491235146020304
+step: 44, hamming: 0.0013535284931628039
+step: 45, hamming: 0.00111064891468224
+step: 46, hamming: 0.0009111549067175905
+Running panda took: 1065.86 seconds!
+  Elapsed time: 1066.00 sec.
+Saving LIONESS network 16 to lioness_output using npy format:
+  Elapsed time: 0.13 sec.
+Running LIONESS for sample 17:
+Computing coexpression network:
+  Elapsed time: 8.03 sec.
+Normalizing networks:
+  Elapsed time: 58.45 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.304282580679008
+step: 1, hamming: 0.48632556631874674
+step: 2, hamming: 0.41368860987818135
+step: 3, hamming: 0.3729217527190143
+step: 4, hamming: 0.3383649486130644
+step: 5, hamming: 0.30666985180800865
+step: 6, hamming: 0.2773844365955827
+step: 7, hamming: 0.2506682143982753
+step: 8, hamming: 0.2267575720414523
+step: 9, hamming: 0.20580814493601188
+step: 10, hamming: 0.18784766298402222
+step: 11, hamming: 0.17276536081823474
+step: 12, hamming: 0.16031246751193054
+step: 13, hamming: 0.1501067212621166
+step: 14, hamming: 0.1416438157599653
+step: 15, hamming: 0.13432467524435313
+step: 16, hamming: 0.12750867600464594
+step: 17, hamming: 0.12059601439483221
+step: 18, hamming: 0.11312597053142628
+step: 19, hamming: 0.10485957769627918
+step: 20, hamming: 0.09581071032385736
+step: 21, hamming: 0.0862088918003521
+step: 22, hamming: 0.07641017018309595
+step: 23, hamming: 0.0667947987452725
+step: 24, hamming: 0.05768776526669852
+step: 25, hamming: 0.049318138366523386
+step: 26, hamming: 0.041813276982126765
+step: 27, hamming: 0.0352144329267889
+step: 28, hamming: 0.029500470023167823
+step: 29, hamming: 0.02461100117413414
+step: 30, hamming: 0.020464954649712205
+step: 31, hamming: 0.0169737173733701
+step: 32, hamming: 0.01404953904944887
+step: 33, hamming: 0.011610363878994001
+step: 34, hamming: 0.009582212815040365
+step: 35, hamming: 0.007900006717406947
+step: 36, hamming: 0.006507466130773198
+step: 37, hamming: 0.005356511464225982
+step: 38, hamming: 0.004406430895619174
+step: 39, hamming: 0.003622976566541127
+step: 40, hamming: 0.0029774796426346854
+step: 41, hamming: 0.002446031261754336
+step: 42, hamming: 0.002008749935274331
+step: 43, hamming: 0.0016491407631702162
+step: 44, hamming: 0.0013535434242918818
+step: 45, hamming: 0.0011106617377493785
+step: 46, hamming: 0.0009111658490023894
+Running panda took: 1035.06 seconds!
+  Elapsed time: 1035.20 sec.
+Saving LIONESS network 17 to lioness_output using npy format:
+  Elapsed time: 0.14 sec.
+Running LIONESS for sample 18:
+Computing coexpression network:
+  Elapsed time: 8.14 sec.
+Normalizing networks:
+  Elapsed time: 40.50 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.314157155590579
+step: 1, hamming: 0.4868879730251853
+step: 2, hamming: 0.4143340659828017
+step: 3, hamming: 0.37352360409779
+step: 4, hamming: 0.338909432474965
+step: 5, hamming: 0.30715772317635964
+step: 6, hamming: 0.27782435103288483
+step: 7, hamming: 0.25107010591490314
+step: 8, hamming: 0.2271290749318248
+step: 9, hamming: 0.20615481298072455
+step: 10, hamming: 0.18817437766457
+step: 11, hamming: 0.17307662059741888
+step: 12, hamming: 0.1606120384207467
+step: 13, hamming: 0.1503972346971439
+step: 14, hamming: 0.1419264629059685
+step: 15, hamming: 0.134599057255996
+step: 16, hamming: 0.12777290740097658
+step: 17, hamming: 0.12084712075173623
+step: 18, hamming: 0.1133605398852352
+step: 19, hamming: 0.1050745258231467
+step: 20, hamming: 0.09600390398491512
+step: 21, hamming: 0.08637945523501424
+step: 22, hamming: 0.07655844714567041
+step: 23, hamming: 0.06692208058114028
+step: 24, hamming: 0.05779593879963473
+step: 25, hamming: 0.04940936665341993
+step: 26, hamming: 0.041889763812749566
+step: 27, hamming: 0.03527827481361669
+step: 28, hamming: 0.029553576903943488
+step: 29, hamming: 0.024655063784838917
+step: 30, hamming: 0.0205014404943567
+step: 31, hamming: 0.017003882575572418
+step: 32, hamming: 0.014074448130567305
+step: 33, hamming: 0.011630912454660232
+step: 34, hamming: 0.009599150454439804
+step: 35, hamming: 0.00791395837211346
+step: 36, hamming: 0.006518951418717256
+step: 37, hamming: 0.005365961486785039
+step: 38, hamming: 0.0044142027370460005
+step: 39, hamming: 0.0036293656147048823
+step: 40, hamming: 0.0029827299789720683
+step: 41, hamming: 0.002450344386569668
+step: 42, hamming: 0.0020122920605924522
+step: 43, hamming: 0.0016520488976017544
+step: 44, hamming: 0.0013559304350562304
+step: 45, hamming: 0.0011126205523708697
+step: 46, hamming: 0.0009127729390337502
+Running panda took: 1016.20 seconds!
+  Elapsed time: 1016.34 sec.
+Saving LIONESS network 18 to lioness_output using npy format:
+  Elapsed time: 0.13 sec.
+Running LIONESS for sample 19:
+Computing coexpression network:
+  Elapsed time: 7.86 sec.
+Normalizing networks:
+  Elapsed time: 27.13 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.327346271404364
+step: 1, hamming: 0.48769854634819815
+step: 2, hamming: 0.41507442297729874
+step: 3, hamming: 0.3742411314956786
+step: 4, hamming: 0.33959099176351837
+step: 5, hamming: 0.3077927487188122
+step: 6, hamming: 0.27841005508727784
+step: 7, hamming: 0.25160907588472087
+step: 8, hamming: 0.22762727264123095
+step: 9, hamming: 0.206619692118062
+step: 10, hamming: 0.18861321113266233
+step: 11, hamming: 0.17349564902879072
+step: 12, hamming: 0.1610160397724939
+step: 13, hamming: 0.15078914173801516
+step: 14, hamming: 0.14230704678734327
+step: 15, hamming: 0.13496683344875132
+step: 16, hamming: 0.1281243999583501
+step: 17, hamming: 0.1211776226243035
+step: 18, hamming: 0.11366515436048555
+step: 19, hamming: 0.10534927846157077
+step: 20, hamming: 0.09624660286891333
+step: 21, hamming: 0.08658994528927635
+step: 22, hamming: 0.07673832188032342
+step: 23, hamming: 0.06707410052884528
+step: 24, hamming: 0.057923422406568094
+step: 25, hamming: 0.04951571955767146
+step: 26, hamming: 0.041978189074442875
+step: 27, hamming: 0.035351633474253276
+step: 28, hamming: 0.029614346589020984
+step: 29, hamming: 0.024705351289240313
+step: 30, hamming: 0.02054301860134726
+step: 31, hamming: 0.017038234396230128
+step: 32, hamming: 0.014102810455907312
+step: 33, hamming: 0.011654314765202876
+step: 34, hamming: 0.009618448607541923
+step: 35, hamming: 0.00792986310900148
+step: 36, hamming: 0.0065320524424453226
+step: 37, hamming: 0.005376747642912727
+step: 38, hamming: 0.004423078903604032
+step: 39, hamming: 0.0036366668349356816
+step: 40, hamming: 0.0029887332842318966
+step: 41, hamming: 0.002455278663189168
+step: 42, hamming: 0.002016346282011058
+step: 43, hamming: 0.0016553789738933229
+step: 44, hamming: 0.0013586649156488357
+step: 45, hamming: 0.0011148653634956412
+step: 46, hamming: 0.0009146153168818905
+Running panda took: 1054.39 seconds!
+  Elapsed time: 1054.52 sec.
+Saving LIONESS network 19 to lioness_output using npy format:
+  Elapsed time: 0.13 sec.
+Running LIONESS for sample 20:
+Computing coexpression network:
+  Elapsed time: 7.92 sec.
+Normalizing networks:
+  Elapsed time: 18.52 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.309646511084699
+step: 1, hamming: 0.4866363507567383
+step: 2, hamming: 0.41396874836967296
+step: 3, hamming: 0.37318658404430993
+step: 4, hamming: 0.3385994360159527
+step: 5, hamming: 0.3068672230027459
+step: 6, hamming: 0.2775507507884213
+step: 7, hamming: 0.2508124806316185
+step: 8, hamming: 0.22688703206799155
+step: 9, hamming: 0.20592795752271587
+step: 10, hamming: 0.18796139952012564
+step: 11, hamming: 0.1728754447316909
+step: 12, hamming: 0.1604203533690234
+step: 13, hamming: 0.15021303618248724
+step: 14, hamming: 0.14174843207402651
+step: 15, hamming: 0.1344267531963084
+step: 16, hamming: 0.1276067898726458
+step: 17, hamming: 0.12068840948964646
+step: 18, hamming: 0.11321092060240306
+step: 19, hamming: 0.10493575389775636
+step: 20, hamming: 0.09587742428543274
+step: 21, hamming: 0.08626614674587646
+step: 22, hamming: 0.07645853681849112
+step: 23, hamming: 0.06683520257488955
+step: 24, hamming: 0.057721277938152196
+step: 25, hamming: 0.04934582412422184
+step: 26, hamming: 0.04183610530031258
+step: 27, hamming: 0.03523324333840651
+step: 28, hamming: 0.02951596872002991
+step: 29, hamming: 0.024623773163239628
+step: 30, hamming: 0.020475481183599466
+step: 31, hamming: 0.016982393636422018
+step: 32, hamming: 0.01405668977356954
+step: 33, hamming: 0.011616256245562851
+step: 34, hamming: 0.00958706699263623
+step: 35, hamming: 0.007904004345285248
+step: 36, hamming: 0.006510757186960421
+step: 37, hamming: 0.005359219826044269
+step: 38, hamming: 0.004408658901341459
+step: 39, hamming: 0.0036248087380549698
+step: 40, hamming: 0.0029789857726295874
+step: 41, hamming: 0.0024472689550243234
+step: 42, hamming: 0.0020097667142929105
+step: 43, hamming: 0.0016499758120739488
+step: 44, hamming: 0.0013542290365951316
+step: 45, hamming: 0.00111122451325564
+step: 46, hamming: 0.0009116276876724083
+Running panda took: 999.04 seconds!
+  Elapsed time: 999.17 sec.
+Saving LIONESS network 20 to lioness_output using npy format:
+  Elapsed time: 0.12 sec.
+Running LIONESS for sample 21:
+Computing coexpression network:
+  Elapsed time: 7.94 sec.
+Normalizing networks:
+  Elapsed time: 30.86 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.304319051576808
+step: 1, hamming: 0.48675597760113737
+step: 2, hamming: 0.4139115765177125
+step: 3, hamming: 0.3731325326181524
+step: 4, hamming: 0.3385556949123907
+step: 5, hamming: 0.3068366567769729
+step: 6, hamming: 0.2775290234311789
+step: 7, hamming: 0.2507940603005921
+step: 8, hamming: 0.22686868435649474
+step: 9, hamming: 0.20590796556088392
+step: 10, hamming: 0.18793908778029092
+step: 11, hamming: 0.1728508990062805
+step: 12, hamming: 0.16039428503286685
+step: 13, hamming: 0.15018667040098393
+step: 14, hamming: 0.1417234617184518
+step: 15, hamming: 0.1344052451951473
+step: 16, hamming: 0.12759093012453201
+step: 17, hamming: 0.1206800862285508
+step: 18, hamming: 0.11321125787019468
+step: 19, hamming: 0.10494478482082817
+step: 20, hamming: 0.09589406933981778
+step: 21, hamming: 0.08628851152257584
+step: 22, hamming: 0.07648438668997219
+step: 23, hamming: 0.06686241589309028
+step: 24, hamming: 0.05774814156438751
+step: 25, hamming: 0.0493711413213605
+step: 26, hamming: 0.041859166254971096
+step: 27, hamming: 0.03525372557024845
+step: 28, hamming: 0.029533821727156965
+step: 29, hamming: 0.0246391169852662
+step: 30, hamming: 0.020488529745521747
+step: 31, hamming: 0.016993401988129018
+step: 32, hamming: 0.014065920735139934
+step: 33, hamming: 0.011623960991518686
+step: 34, hamming: 0.00959347495549278
+step: 35, hamming: 0.007909319030095846
+step: 36, hamming: 0.006515155563299037
+step: 37, hamming: 0.005362853640985899
+step: 38, hamming: 0.004411656955098233
+step: 39, hamming: 0.0036272795404148008
+step: 40, hamming: 0.002981020224643058
+step: 41, hamming: 0.002448942880053934
+step: 42, hamming: 0.002011143154193601
+step: 43, hamming: 0.001651107047630701
+step: 44, hamming: 0.0013551583383518437
+step: 45, hamming: 0.0011119876382837022
+step: 46, hamming: 0.0009122541457140348
+Running panda took: 1031.45 seconds!
+  Elapsed time: 1031.59 sec.
+Saving LIONESS network 21 to lioness_output using npy format:
+  Elapsed time: 0.18 sec.
+Running LIONESS for sample 22:
+Computing coexpression network:
+  Elapsed time: 8.05 sec.
+Normalizing networks:
+  Elapsed time: 31.65 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.316240342636962
+step: 1, hamming: 0.48683139872378
+step: 2, hamming: 0.41430113390779766
+step: 3, hamming: 0.3734539566849404
+step: 4, hamming: 0.3388349049021254
+step: 5, hamming: 0.30709359023523075
+step: 6, hamming: 0.2777700250175579
+step: 7, hamming: 0.2510219051870418
+step: 8, hamming: 0.2270851563900545
+step: 9, hamming: 0.2061146575902694
+step: 10, hamming: 0.18813774310329884
+step: 11, hamming: 0.17304311315424398
+step: 12, hamming: 0.16058113813080183
+step: 13, hamming: 0.15036835163039788
+step: 14, hamming: 0.14189899534106146
+step: 15, hamming: 0.13457245306050938
+step: 16, hamming: 0.12774672124535497
+step: 17, hamming: 0.12082107649405445
+step: 18, hamming: 0.11333459077901924
+step: 19, hamming: 0.10504886104885118
+step: 20, hamming: 0.09597890234858868
+step: 21, hamming: 0.08635558957295172
+step: 22, hamming: 0.0765361743542104
+step: 23, hamming: 0.06690175467074387
+step: 24, hamming: 0.05777776710167777
+step: 25, hamming: 0.04939340795001438
+step: 26, hamming: 0.04187595475046326
+step: 27, hamming: 0.03526646741623734
+step: 28, hamming: 0.029543574931124614
+step: 29, hamming: 0.024646651843888142
+step: 30, hamming: 0.02049440431463803
+step: 31, hamming: 0.016998021346690206
+step: 32, hamming: 0.014069580823275623
+step: 33, hamming: 0.01162688008773881
+step: 34, hamming: 0.009595815890351208
+step: 35, hamming: 0.00791120479653954
+step: 36, hamming: 0.006516680189533223
+step: 37, hamming: 0.005364089839963431
+step: 38, hamming: 0.004412661551895796
+step: 39, hamming: 0.0036280973535712
+step: 40, hamming: 0.0029816868804703207
+step: 41, hamming: 0.0024494868784980827
+step: 42, hamming: 0.002011587411565672
+step: 43, hamming: 0.0016514700682628749
+step: 44, hamming: 0.00135545511240523
+step: 45, hamming: 0.0011122303394302403
+step: 46, hamming: 0.0009124526789917048
+Running panda took: 1050.75 seconds!
+  Elapsed time: 1050.88 sec.
+Saving LIONESS network 22 to lioness_output using npy format:
+  Elapsed time: 0.13 sec.
+Running LIONESS for sample 23:
+Computing coexpression network:
+  Elapsed time: 7.89 sec.
+Normalizing networks:
+  Elapsed time: 34.47 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.297095580061599
+step: 1, hamming: 0.48579288502719914
+step: 2, hamming: 0.4130174869615015
+step: 3, hamming: 0.37231714958960715
+step: 4, hamming: 0.33780150460898856
+step: 5, hamming: 0.30614221030702066
+step: 6, hamming: 0.2768914455143531
+step: 7, hamming: 0.250209410502672
+step: 8, hamming: 0.22633032651897705
+step: 9, hamming: 0.20540822160370242
+step: 10, hamming: 0.18747033295860038
+step: 11, hamming: 0.17240608651304715
+step: 12, hamming: 0.1599672735190193
+step: 13, hamming: 0.14977261379553303
+step: 14, hamming: 0.14131919918022634
+step: 15, hamming: 0.13400961766601505
+step: 16, hamming: 0.12720492068912329
+step: 17, hamming: 0.12030661923019315
+step: 18, hamming: 0.11285462862055604
+step: 19, hamming: 0.10460978864450816
+step: 20, hamming: 0.09558505690672726
+step: 21, hamming: 0.08600863478448373
+step: 22, hamming: 0.07623521554632844
+step: 23, hamming: 0.06664394162603182
+step: 24, hamming: 0.05755905385911204
+step: 25, hamming: 0.04920922830912888
+step: 26, hamming: 0.04172171000148575
+step: 27, hamming: 0.035137824280533254
+step: 28, hamming: 0.029436616960542405
+step: 29, hamming: 0.02455793392967241
+step: 30, hamming: 0.020420950387728214
+step: 31, hamming: 0.016937292607274137
+step: 32, hamming: 0.014019430577709073
+step: 33, hamming: 0.011585504738954934
+step: 34, hamming: 0.009561707090224877
+step: 35, hamming: 0.007883105401256663
+step: 36, hamming: 0.0064935450963440255
+step: 37, hamming: 0.005345051926318497
+step: 38, hamming: 0.004397002495229943
+step: 39, hamming: 0.0036152228622659743
+step: 40, hamming: 0.0029711058018189827
+step: 41, hamming: 0.002440793668973049
+step: 42, hamming: 0.002004447482358983
+step: 43, hamming: 0.0016456075644463138
+step: 44, hamming: 0.0013506427462306313
+step: 45, hamming: 0.0011082809461763759
+step: 46, hamming: 0.0009092122140145844
+Running panda took: 1051.38 seconds!
+  Elapsed time: 1051.52 sec.
+Saving LIONESS network 23 to lioness_output using npy format:
+  Elapsed time: 0.14 sec.
+Running LIONESS for sample 24:
+Computing coexpression network:
+  Elapsed time: 8.07 sec.
+Normalizing networks:
+  Elapsed time: 27.00 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.2992659648076
+step: 1, hamming: 0.4860219937768162
+step: 2, hamming: 0.4135723882507626
+step: 3, hamming: 0.37288189382549447
+step: 4, hamming: 0.3383435146538083
+step: 5, hamming: 0.30664658480429335
+step: 6, hamming: 0.27735855055891534
+step: 7, hamming: 0.2506425003340155
+step: 8, hamming: 0.22673359858883793
+step: 9, hamming: 0.2057857041057981
+step: 10, hamming: 0.1878262289403425
+step: 11, hamming: 0.1727446330845248
+step: 12, hamming: 0.1602924817056788
+step: 13, hamming: 0.15008785957372867
+step: 14, hamming: 0.14162679592958705
+step: 15, hamming: 0.1343104912352153
+step: 16, hamming: 0.1274984451204385
+step: 17, hamming: 0.12059074318803929
+step: 18, hamming: 0.11312619757889245
+step: 19, hamming: 0.10486523389724928
+step: 20, hamming: 0.09582107324597806
+step: 21, hamming: 0.08622277177281198
+step: 22, hamming: 0.07642619650835318
+step: 23, hamming: 0.06681168287698531
+step: 24, hamming: 0.05770447046766314
+step: 25, hamming: 0.04933394010878084
+step: 26, hamming: 0.04182774241210663
+step: 27, hamming: 0.035227359689835355
+step: 28, hamming: 0.029511816683146383
+step: 29, hamming: 0.024620827121004923
+step: 30, hamming: 0.02047337569308569
+step: 31, hamming: 0.016980875894406746
+step: 32, hamming: 0.014055585183532057
+step: 33, hamming: 0.011615444181758205
+step: 34, hamming: 0.009586463849419104
+step: 35, hamming: 0.007903551889525
+step: 36, hamming: 0.0065104145981469165
+step: 37, hamming: 0.005358958222126884
+step: 38, hamming: 0.004408457626802047
+step: 39, hamming: 0.0036246528578795798
+step: 40, hamming: 0.002978864360629976
+step: 41, hamming: 0.002447173925534882
+step: 42, hamming: 0.002009692018263693
+step: 43, hamming: 0.0016499168818490733
+step: 44, hamming: 0.001354182393975121
+step: 45, hamming: 0.0011111874909404986
+step: 46, hamming: 0.0009115982269483812
+Running panda took: 1047.99 seconds!
+  Elapsed time: 1048.12 sec.
+Saving LIONESS network 24 to lioness_output using npy format:
+  Elapsed time: 0.14 sec.
+Running LIONESS for sample 25:
+Computing coexpression network:
+  Elapsed time: 7.92 sec.
+Normalizing networks:
+  Elapsed time: 19.84 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.3175975393125094
+step: 1, hamming: 0.4872642841824452
+step: 2, hamming: 0.4145000052994208
+step: 3, hamming: 0.3736570595650982
+step: 4, hamming: 0.3390279209494675
+step: 5, hamming: 0.3072670671057167
+step: 6, hamming: 0.2779266379780608
+step: 7, hamming: 0.25116593434191514
+step: 8, hamming: 0.22721893099530185
+step: 9, hamming: 0.20623996358660998
+step: 10, hamming: 0.18825607407159653
+step: 11, hamming: 0.17315579128455025
+step: 12, hamming: 0.1606892095157162
+step: 13, hamming: 0.15047248468980032
+step: 14, hamming: 0.14199940516348616
+step: 15, hamming: 0.13466885297217357
+step: 16, hamming: 0.12783837156697933
+step: 17, hamming: 0.12090692972074281
+step: 18, hamming: 0.11341353696343023
+step: 19, hamming: 0.10511999677946623
+step: 20, hamming: 0.09604173191165158
+step: 21, hamming: 0.0864100969192864
+step: 22, hamming: 0.07658276628037056
+step: 23, hamming: 0.06694113018847107
+step: 24, hamming: 0.05781077329860329
+step: 25, hamming: 0.04942092325984117
+step: 26, hamming: 0.04189881265668421
+step: 27, hamming: 0.035285416073706465
+step: 28, hamming: 0.029559262850680824
+step: 29, hamming: 0.024659629250551384
+step: 30, hamming: 0.020505132459184526
+step: 31, hamming: 0.01700688467972904
+step: 32, hamming: 0.014076899005840963
+step: 33, hamming: 0.011632918728590826
+step: 34, hamming: 0.009600795645557438
+step: 35, hamming: 0.007915308890692542
+step: 36, hamming: 0.0065200606943456646
+step: 37, hamming: 0.005366872858186105
+step: 38, hamming: 0.004414951561517963
+step: 39, hamming: 0.0036299808414109245
+step: 40, hamming: 0.0029832353691919577
+step: 41, hamming: 0.002450759470113455
+step: 42, hamming: 0.002012632901312063
+step: 43, hamming: 0.0016523287127489517
+step: 44, hamming: 0.0013561601002774486
+step: 45, hamming: 0.0011128090154322399
+step: 46, hamming: 0.0009129275602459596
+Running panda took: 1009.26 seconds!
+  Elapsed time: 1009.40 sec.
+Saving LIONESS network 25 to lioness_output using npy format:
+  Elapsed time: 0.14 sec.
+Running LIONESS for sample 26:
+Computing coexpression network:
+  Elapsed time: 7.89 sec.
+Normalizing networks:
+  Elapsed time: 28.03 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.254978360551998
+step: 1, hamming: 0.4824318468286414
+step: 2, hamming: 0.41054624396454026
+step: 3, hamming: 0.3701137632658818
+step: 4, hamming: 0.3358049748398791
+step: 5, hamming: 0.30431863277076104
+step: 6, hamming: 0.2752218511101226
+step: 7, hamming: 0.24867514399825333
+step: 8, hamming: 0.22491144004224936
+step: 9, hamming: 0.20408474211286756
+step: 10, hamming: 0.18622339112894648
+step: 11, hamming: 0.17121912368071024
+step: 12, hamming: 0.15882733168016935
+step: 13, hamming: 0.1486715691070921
+step: 14, hamming: 0.14025475215632321
+step: 15, hamming: 0.13298565440446453
+step: 16, hamming: 0.1262307932567711
+step: 17, hamming: 0.11939512242120484
+step: 18, hamming: 0.11201893605524625
+step: 19, hamming: 0.10386023755767995
+step: 20, hamming: 0.09492688012320329
+step: 21, hamming: 0.08544133122663773
+step: 22, hamming: 0.07575344626001443
+step: 23, hamming: 0.06623924701095953
+step: 24, hamming: 0.05722161427197244
+step: 25, hamming: 0.04892919299517427
+step: 26, hamming: 0.04148998175405696
+step: 27, hamming: 0.03494640166596556
+step: 28, hamming: 0.02927865831960737
+step: 29, hamming: 0.024427680983748198
+step: 30, hamming: 0.020313598314475254
+step: 31, hamming: 0.016848850925921
+step: 32, hamming: 0.013946593968072008
+step: 33, hamming: 0.011525539592732186
+step: 34, hamming: 0.009512354728348705
+step: 35, hamming: 0.007842500588961875
+step: 36, hamming: 0.00646014806797468
+step: 37, hamming: 0.0053175919691399905
+step: 38, hamming: 0.004374431222763654
+step: 39, hamming: 0.0035966755727813906
+step: 40, hamming: 0.002955869540575939
+step: 41, hamming: 0.002428280819303219
+step: 42, hamming: 0.001994173926789264
+step: 43, hamming: 0.001637174619914072
+step: 44, hamming: 0.0013437222222332707
+step: 45, hamming: 0.0011026027906435518
+step: 46, hamming: 0.0009045543025865019
+Running panda took: 1041.50 seconds!
+  Elapsed time: 1041.64 sec.
+Saving LIONESS network 26 to lioness_output using npy format:
+  Elapsed time: 0.13 sec.
+Running LIONESS for sample 27:
+Computing coexpression network:
+  Elapsed time: 7.90 sec.
+Normalizing networks:
+  Elapsed time: 19.15 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.314083395369596
+step: 1, hamming: 0.48690746976654337
+step: 2, hamming: 0.414249340168935
+step: 3, hamming: 0.373444675399849
+step: 4, hamming: 0.3388381436639314
+step: 5, hamming: 0.3070937161395808
+step: 6, hamming: 0.2777638472551687
+step: 7, hamming: 0.25101158427002523
+step: 8, hamming: 0.22707242621717866
+step: 9, hamming: 0.20610050611180059
+step: 10, hamming: 0.1881225821240883
+step: 11, hamming: 0.1730271077831984
+step: 12, hamming: 0.16056431733238155
+step: 13, hamming: 0.1503506876058733
+step: 14, hamming: 0.1418804770450667
+step: 15, hamming: 0.1345531370895897
+step: 16, hamming: 0.1277267734726679
+step: 17, hamming: 0.12080078434777958
+step: 18, hamming: 0.11331434469892389
+step: 19, hamming: 0.10502910518559609
+step: 20, hamming: 0.09596008079803668
+step: 21, hamming: 0.08633806987709924
+step: 22, hamming: 0.07652020779925829
+step: 23, hamming: 0.06688747499049694
+step: 24, hamming: 0.05776520185370386
+step: 25, hamming: 0.049382501958853214
+step: 26, hamming: 0.04186659635727801
+step: 27, hamming: 0.03525851211076809
+step: 28, hamming: 0.029536863669680946
+step: 29, hamming: 0.02464102437601601
+step: 30, hamming: 0.020489708002184345
+step: 31, hamming: 0.016994116433823
+step: 32, hamming: 0.01406634299893053
+step: 33, hamming: 0.011624201113524793
+step: 34, hamming: 0.009593602949777562
+step: 35, hamming: 0.0079093791492922
+step: 36, hamming: 0.006515175587657904
+step: 37, hamming: 0.005362850848725634
+step: 38, hamming: 0.0044116419722549935
+step: 39, hamming: 0.00362725881035167
+step: 40, hamming: 0.002980997564229277
+step: 41, hamming: 0.002448920472289499
+step: 42, hamming: 0.002011122171357964
+step: 43, hamming: 0.0016510880491666074
+step: 44, hamming: 0.0013551415183792699
+step: 45, hamming: 0.0011119729805670663
+step: 46, hamming: 0.0009122415192167651
+Running panda took: 1051.43 seconds!
+  Elapsed time: 1051.56 sec.
+Saving LIONESS network 27 to lioness_output using npy format:
+  Elapsed time: 0.15 sec.
+Running LIONESS for sample 28:
+Computing coexpression network:
+  Elapsed time: 8.01 sec.
+Normalizing networks:
+  Elapsed time: 21.29 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.319141810214336
+step: 1, hamming: 0.48684916050925714
+step: 2, hamming: 0.41418208982329463
+step: 3, hamming: 0.3733430362682075
+step: 4, hamming: 0.33873115259353775
+step: 5, hamming: 0.3069897807667247
+step: 6, hamming: 0.2776679174003161
+step: 7, hamming: 0.2509241013038616
+step: 8, hamming: 0.22699336784403457
+step: 9, hamming: 0.20602948723562756
+step: 10, hamming: 0.18805881446417452
+step: 11, hamming: 0.17296947424401493
+step: 12, hamming: 0.16051146212380127
+step: 13, hamming: 0.150301105174577
+step: 14, hamming: 0.14183259100245096
+step: 15, hamming: 0.13450543235833534
+step: 16, hamming: 0.12767796895480416
+step: 17, hamming: 0.12075005566477964
+step: 18, hamming: 0.11326151143866892
+step: 19, hamming: 0.10497470411824969
+step: 20, hamming: 0.09590523589587992
+step: 21, hamming: 0.08628423604206834
+step: 22, hamming: 0.07646884489538101
+step: 23, hamming: 0.06683977531167805
+step: 24, hamming: 0.05772195468489321
+step: 25, hamming: 0.04934408191947031
+step: 26, hamming: 0.041833030813079326
+step: 27, hamming: 0.035229578902844526
+step: 28, hamming: 0.02951218687366295
+step: 29, hamming: 0.024620151467622194
+step: 30, hamming: 0.02047216536288768
+step: 31, hamming: 0.01697944520537054
+step: 32, hamming: 0.014054119598569743
+step: 33, hamming: 0.011614046909501335
+step: 34, hamming: 0.009585186890051145
+step: 35, hamming: 0.007902416249107995
+step: 36, hamming: 0.006509423208280718
+step: 37, hamming: 0.005358104077432516
+step: 38, hamming: 0.004407728778235755
+step: 39, hamming: 0.0036240353989820655
+step: 40, hamming: 0.002978344154032618
+step: 41, hamming: 0.002446737543784988
+step: 42, hamming: 0.0020093272127814357
+step: 43, hamming: 0.0016496127606780088
+step: 44, hamming: 0.0013539294422100824
+step: 45, hamming: 0.001110977500948527
+step: 46, hamming: 0.0009114241825554716
+Running panda took: 1026.65 seconds!
+  Elapsed time: 1026.79 sec.
+Saving LIONESS network 28 to lioness_output using npy format:
+  Elapsed time: 0.14 sec.
+Running LIONESS for sample 29:
+Computing coexpression network:
+  Elapsed time: 8.09 sec.
+Normalizing networks:
+  Elapsed time: 23.91 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.220599050483307
+step: 1, hamming: 0.4808148951384413
+step: 2, hamming: 0.4092952302194162
+step: 3, hamming: 0.36893450334845823
+step: 4, hamming: 0.3346872841707678
+step: 5, hamming: 0.30327116071755333
+step: 6, hamming: 0.27424681639065324
+step: 7, hamming: 0.24776815194868246
+step: 8, hamming: 0.22406433314291305
+step: 9, hamming: 0.20328744521079486
+step: 10, hamming: 0.18546568204478875
+step: 11, hamming: 0.17049193100108337
+step: 12, hamming: 0.1581238062978661
+step: 13, hamming: 0.14798803705605115
+step: 14, hamming: 0.13959141202856945
+step: 15, hamming: 0.1323467557862026
+step: 16, hamming: 0.12562402134272244
+step: 17, hamming: 0.11883007546402136
+step: 18, hamming: 0.11150491626018398
+step: 19, hamming: 0.10340404045885183
+step: 20, hamming: 0.09453137448478001
+step: 21, hamming: 0.08510526331847502
+step: 22, hamming: 0.07547230249335937
+step: 23, hamming: 0.06600660153018988
+step: 24, hamming: 0.05703039588485841
+step: 25, hamming: 0.04877257560922292
+step: 26, hamming: 0.04136186533258689
+step: 27, hamming: 0.03484158637979343
+step: 28, hamming: 0.02919283533568869
+step: 29, hamming: 0.024357334911211892
+step: 30, hamming: 0.02025588074123319
+step: 31, hamming: 0.016801457025596715
+step: 32, hamming: 0.013907655364265921
+step: 33, hamming: 0.01149353690188898
+step: 34, hamming: 0.009486048231190492
+step: 35, hamming: 0.007820875828588172
+step: 36, hamming: 0.006442373091375873
+step: 37, hamming: 0.0053029834088825735
+step: 38, hamming: 0.004362427176092488
+step: 39, hamming: 0.0035868137228790816
+step: 40, hamming: 0.002947769377736726
+step: 41, hamming: 0.0024216291351705777
+step: 42, hamming: 0.0019887129182102384
+step: 43, hamming: 0.0016326921210153482
+step: 44, hamming: 0.0013400436646455493
+step: 45, hamming: 0.0010995845791895724
+step: 46, hamming: 0.0009020783537336783
+Running panda took: 1003.11 seconds!
+  Elapsed time: 1003.25 sec.
+Saving LIONESS network 29 to lioness_output using npy format:
+  Elapsed time: 0.13 sec.
+Running LIONESS for sample 30:
+Computing coexpression network:
+  Elapsed time: 7.93 sec.
+Normalizing networks:
+  Elapsed time: 25.82 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.304196369358281
+step: 1, hamming: 0.48618847417119976
+step: 2, hamming: 0.41363417992164675
+step: 3, hamming: 0.3729233722505975
+step: 4, hamming: 0.3383655718374872
+step: 5, hamming: 0.3066537693343171
+step: 6, hamming: 0.2773540011605624
+step: 7, hamming: 0.25062981109966503
+step: 8, hamming: 0.2267160471499227
+step: 9, hamming: 0.20576616270536538
+step: 10, hamming: 0.1878065202390183
+step: 11, hamming: 0.17272558304358782
+step: 12, hamming: 0.16027407654774536
+step: 13, hamming: 0.15006943919685622
+step: 14, hamming: 0.14160725415598535
+step: 15, hamming: 0.1342884889997483
+step: 16, hamming: 0.12747269095550384
+step: 17, hamming: 0.12056030004010723
+step: 18, hamming: 0.11309085303756974
+step: 19, hamming: 0.10482559393018542
+step: 20, hamming: 0.09577850317368276
+step: 21, hamming: 0.08617907687929305
+step: 22, hamming: 0.07638321743006814
+step: 23, hamming: 0.0667709635151392
+step: 24, hamming: 0.05766707937674185
+step: 25, hamming: 0.04930045036917326
+step: 26, hamming: 0.04179831655195149
+step: 27, hamming: 0.03520187519904512
+step: 28, hamming: 0.029489983789425484
+step: 29, hamming: 0.024602277012875533
+step: 30, hamming: 0.020457717055188465
+step: 31, hamming: 0.016967727188387113
+step: 32, hamming: 0.014044591344103354
+step: 33, hamming: 0.011606284324725892
+step: 34, hamming: 0.009578853989351079
+step: 35, hamming: 0.007897244613659576
+step: 36, hamming: 0.006505196946951061
+step: 37, hamming: 0.005354648679618665
+step: 38, hamming: 0.00440490266813718
+step: 39, hamming: 0.0036217234187768525
+step: 40, hamming: 0.002976452456606804
+step: 41, hamming: 0.002445189549357354
+step: 42, hamming: 0.002008060371630404
+step: 43, hamming: 0.0016485759510232842
+step: 44, hamming: 0.0013530808621194685
+step: 45, hamming: 0.001110282957803332
+step: 46, hamming: 0.0009108557031371721
+Running panda took: 1017.64 seconds!
+  Elapsed time: 1017.77 sec.
+Saving LIONESS network 30 to lioness_output using npy format:
+  Elapsed time: 0.16 sec.
+Running LIONESS for sample 31:
+Computing coexpression network:
+  Elapsed time: 8.11 sec.
+Normalizing networks:
+  Elapsed time: 29.86 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.318855364709831
+step: 1, hamming: 0.48732748087733635
+step: 2, hamming: 0.41453938953339
+step: 3, hamming: 0.37368546685211323
+step: 4, hamming: 0.33904531009691324
+step: 5, hamming: 0.30727451499250974
+step: 6, hamming: 0.2779258058467161
+step: 7, hamming: 0.2511592060285329
+step: 8, hamming: 0.22720856853241905
+step: 9, hamming: 0.20622739636452944
+step: 10, hamming: 0.18824214653369709
+step: 11, hamming: 0.17314099761892388
+step: 12, hamming: 0.1606738564965933
+step: 13, hamming: 0.15045677541088598
+step: 14, hamming: 0.1419834808837109
+step: 15, hamming: 0.1346528335570113
+step: 16, hamming: 0.12782239292878786
+step: 17, hamming: 0.12089117319163287
+step: 18, hamming: 0.1133982351574874
+step: 19, hamming: 0.10510541317120964
+step: 20, hamming: 0.09602812323492162
+step: 21, hamming: 0.08639767218767
+step: 22, hamming: 0.07657165873948635
+step: 23, hamming: 0.06693138737574737
+step: 24, hamming: 0.05780236471996935
+step: 25, hamming: 0.049413759735559726
+step: 26, hamming: 0.041892769321259425
+step: 27, hamming: 0.035280353455962685
+step: 28, hamming: 0.029555042456038186
+step: 29, hamming: 0.024656123007638704
+step: 30, hamming: 0.020502226777832675
+step: 31, hamming: 0.017004481299261343
+step: 32, hamming: 0.014074914170332594
+step: 33, hamming: 0.011631281657729024
+step: 34, hamming: 0.009599446849356224
+step: 35, hamming: 0.007914198587148997
+step: 36, hamming: 0.00651914737397955
+step: 37, hamming: 0.005366122013634862
+step: 38, hamming: 0.004414334586336608
+step: 39, hamming: 0.003629474061871486
+step: 40, hamming: 0.002982819237747544
+step: 41, hamming: 0.002450417866100415
+step: 42, hamming: 0.002012352545973336
+step: 43, hamming: 0.001652098673969089
+step: 44, hamming: 0.0013559713843140431
+step: 45, hamming: 0.0011126542263558178
+step: 46, hamming: 0.0009128006188203995
+Running panda took: 1064.98 seconds!
+  Elapsed time: 1065.12 sec.
+Saving LIONESS network 31 to lioness_output using npy format:
+  Elapsed time: 0.14 sec.
+Running LIONESS for sample 32:
+Computing coexpression network:
+  Elapsed time: 7.87 sec.
+Normalizing networks:
+  Elapsed time: 35.16 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.309512584003045
+step: 1, hamming: 0.486448727964824
+step: 2, hamming: 0.4140600860797608
+step: 3, hamming: 0.37329722429798073
+step: 4, hamming: 0.338717079902274
+step: 5, hamming: 0.30698726720173347
+step: 6, hamming: 0.2776686807050393
+step: 7, hamming: 0.2509247409413841
+step: 8, hamming: 0.2269916259032195
+step: 9, hamming: 0.20602425826928003
+step: 10, hamming: 0.1880497641258608
+step: 11, hamming: 0.17295679005838366
+step: 12, hamming: 0.1604958194243627
+step: 13, hamming: 0.15028370390489731
+step: 14, hamming: 0.14181516848928286
+step: 15, hamming: 0.13449013233341323
+step: 16, hamming: 0.1276670737041859
+step: 17, hamming: 0.12074556280131071
+step: 18, hamming: 0.11326467402302552
+step: 19, hamming: 0.1049857092436167
+step: 20, hamming: 0.09592317861930594
+step: 21, hamming: 0.0863073985971496
+step: 22, hamming: 0.07649515134449768
+step: 23, hamming: 0.06686723001471521
+step: 24, hamming: 0.05774893236762591
+step: 25, hamming: 0.04936944088860559
+step: 26, hamming: 0.041856092151495744
+step: 27, hamming: 0.03525003665152823
+step: 28, hamming: 0.029529999857902153
+step: 29, hamming: 0.024635446300854603
+step: 30, hamming: 0.020485161257739755
+step: 31, hamming: 0.0169904015285727
+step: 32, hamming: 0.014063302312528086
+step: 33, hamming: 0.011621709066313617
+step: 34, hamming: 0.009591558750479444
+step: 35, hamming: 0.007907701366828373
+step: 36, hamming: 0.006513798088201787
+step: 37, hamming: 0.0053617197085025345
+step: 38, hamming: 0.004410713099179124
+step: 39, hamming: 0.00362649607045857
+step: 40, hamming: 0.002980371309383304
+step: 41, hamming: 0.002448406351217239
+step: 42, hamming: 0.002010700174024051
+step: 43, hamming: 0.0016507417268870246
+step: 44, hamming: 0.0013548573494850176
+step: 45, hamming: 0.0011117398500794654
+step: 46, hamming: 0.000912050291773695
+Running panda took: 1037.48 seconds!
+  Elapsed time: 1037.62 sec.
+Saving LIONESS network 32 to lioness_output using npy format:
+  Elapsed time: 0.15 sec.
+Running LIONESS for sample 33:
+Computing coexpression network:
+  Elapsed time: 8.03 sec.
+Normalizing networks:
+  Elapsed time: 56.62 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.268272116640635
+step: 1, hamming: 0.48420404163387265
+step: 2, hamming: 0.4113378231676897
+step: 3, hamming: 0.37075811595243774
+step: 4, hamming: 0.3363534592132874
+step: 5, hamming: 0.30479838190643704
+step: 6, hamming: 0.2756470832001805
+step: 7, hamming: 0.24905596087963397
+step: 8, hamming: 0.22525637879942417
+step: 9, hamming: 0.20440062063629771
+step: 10, hamming: 0.18651553680843524
+step: 11, hamming: 0.1714916155556494
+step: 12, hamming: 0.15908292292511372
+step: 13, hamming: 0.1489114727813401
+step: 14, hamming: 0.14047850378390747
+step: 15, hamming: 0.13319123709814437
+step: 16, hamming: 0.1264150759066295
+step: 17, hamming: 0.11955469825267004
+step: 18, hamming: 0.11215123605412543
+step: 19, hamming: 0.10396446879131806
+step: 20, hamming: 0.09500438482493878
+step: 21, hamming: 0.08549534350301018
+step: 22, hamming: 0.07578834223390855
+step: 23, hamming: 0.06625967363528776
+step: 24, hamming: 0.05723180898185776
+step: 25, hamming: 0.04893261916391384
+step: 26, hamming: 0.04148924127852146
+step: 27, hamming: 0.03494332086136772
+step: 28, hamming: 0.029274446284417534
+step: 29, hamming: 0.02442309460877428
+step: 30, hamming: 0.020309082690694903
+step: 31, hamming: 0.016844646446510493
+step: 32, hamming: 0.01394281235819174
+step: 33, hamming: 0.011522215322316311
+step: 34, hamming: 0.00950947832833283
+step: 35, hamming: 0.007840039584709819
+step: 36, hamming: 0.006458059718197019
+step: 37, hamming: 0.005315830695704871
+step: 38, hamming: 0.004372952735946892
+step: 39, hamming: 0.00359543897735647
+step: 40, hamming: 0.002954838241258282
+step: 41, hamming: 0.0024274227380149268
+step: 42, hamming: 0.001993461337073222
+step: 43, hamming: 0.0016365838019192353
+step: 44, hamming: 0.0013432330335176824
+step: 45, hamming: 0.0011021982244614052
+step: 46, hamming: 0.0009042200621505566
+Running panda took: 1051.80 seconds!
+  Elapsed time: 1051.93 sec.
+Saving LIONESS network 33 to lioness_output using npy format:
+  Elapsed time: 0.14 sec.
+Running LIONESS for sample 34:
+Computing coexpression network:
+  Elapsed time: 8.00 sec.
+Normalizing networks:
+  Elapsed time: 36.56 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.302726647132125
+step: 1, hamming: 0.4857706832250159
+step: 2, hamming: 0.4134530112582403
+step: 3, hamming: 0.3727191739817216
+step: 4, hamming: 0.3381874348507286
+step: 5, hamming: 0.30651129346944983
+step: 6, hamming: 0.2772431502644367
+step: 7, hamming: 0.25054296123990594
+step: 8, hamming: 0.22664598794835736
+step: 9, hamming: 0.20570757981685692
+step: 10, hamming: 0.18775558245469245
+step: 11, hamming: 0.1726797743526032
+step: 12, hamming: 0.1602318505202428
+step: 13, hamming: 0.1500299403603969
+step: 14, hamming: 0.14157015492078975
+step: 15, hamming: 0.13425386891535082
+step: 16, hamming: 0.12744090258499677
+step: 17, hamming: 0.1205317976849997
+step: 18, hamming: 0.11306601182949999
+step: 19, hamming: 0.10480455291569295
+step: 20, hamming: 0.09576110876150362
+step: 21, hamming: 0.08616492940400196
+step: 22, hamming: 0.07637176516911114
+step: 23, hamming: 0.06676164327961882
+step: 24, hamming: 0.05765940929969485
+step: 25, hamming: 0.04929406502695614
+step: 26, hamming: 0.041792957740562256
+step: 27, hamming: 0.03519736201873513
+step: 28, hamming: 0.029486182331692357
+step: 29, hamming: 0.024599079802018687
+step: 30, hamming: 0.020455032648305244
+step: 31, hamming: 0.016965476335811636
+step: 32, hamming: 0.014042705761157319
+step: 33, hamming: 0.011604705859025496
+step: 34, hamming: 0.009577533520768846
+step: 35, hamming: 0.007896140810805943
+step: 36, hamming: 0.006504275077934854
+step: 37, hamming: 0.005353879526989796
+step: 38, hamming: 0.004404261634778247
+step: 39, hamming: 0.0036211897697125055
+step: 40, hamming: 0.0029760087129232417
+step: 41, hamming: 0.002444820980722883
+step: 42, hamming: 0.002007754578467327
+step: 43, hamming: 0.001648322506919159
+step: 44, hamming: 0.0013528710137643857
+step: 45, hamming: 0.0011101093688109793
+step: 46, hamming: 0.0009107122332587424
+Running panda took: 1090.08 seconds!
+  Elapsed time: 1090.22 sec.
+Saving LIONESS network 34 to lioness_output using npy format:
+  Elapsed time: 0.14 sec.
+Running LIONESS for sample 35:
+Computing coexpression network:
+  Elapsed time: 7.97 sec.
+Normalizing networks:
+  Elapsed time: 37.26 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.321185923324457
+step: 1, hamming: 0.48731621526667135
+step: 2, hamming: 0.4146868068332803
+step: 3, hamming: 0.37384234191972865
+step: 4, hamming: 0.33921185697407885
+step: 5, hamming: 0.3074440963641105
+step: 6, hamming: 0.27809466392128673
+step: 7, hamming: 0.2513250082035518
+step: 8, hamming: 0.2273693175254971
+step: 9, hamming: 0.20638206339837742
+step: 10, hamming: 0.18839056579593985
+step: 11, hamming: 0.17328368985954848
+step: 12, hamming: 0.1608115950626377
+step: 13, hamming: 0.15059017835885619
+step: 14, hamming: 0.14211273866162769
+step: 15, hamming: 0.13477756059352689
+step: 16, hamming: 0.12794163765124267
+step: 17, hamming: 0.12100358127829262
+step: 18, hamming: 0.11350235707576607
+step: 19, hamming: 0.10520000034719829
+step: 20, hamming: 0.09611240667255298
+step: 21, hamming: 0.08647145615818956
+step: 22, hamming: 0.07663528806503735
+step: 23, hamming: 0.06698560279840501
+step: 24, hamming: 0.057848133233942195
+step: 25, hamming: 0.04945213128118417
+step: 26, hamming: 0.04192477713443347
+step: 27, hamming: 0.03530695559981675
+step: 28, hamming: 0.029577093923317074
+step: 29, hamming: 0.024674367576468938
+step: 30, hamming: 0.020517300649762
+step: 31, hamming: 0.017016922462293197
+step: 32, hamming: 0.01408517405238087
+step: 33, hamming: 0.011639737065181696
+step: 34, hamming: 0.009606411222002884
+step: 35, hamming: 0.007919932029144726
+step: 36, hamming: 0.006523865355662141
+step: 37, hamming: 0.005370002818716728
+step: 38, hamming: 0.004417525579129566
+step: 39, hamming: 0.0036320969554197637
+step: 40, hamming: 0.0029849744863325116
+step: 41, hamming: 0.002452188320424089
+step: 42, hamming: 0.0020138065037831557
+step: 43, hamming: 0.0016532924049840313
+step: 44, hamming: 0.001356951228031094
+step: 45, hamming: 0.001113458327313457
+step: 46, hamming: 0.0009134603620798453
+Running panda took: 1132.11 seconds!
+  Elapsed time: 1132.24 sec.
+Saving LIONESS network 35 to lioness_output using npy format:
+  Elapsed time: 0.17 sec.
+Running LIONESS for sample 36:
+Computing coexpression network:
+  Elapsed time: 8.05 sec.
+Normalizing networks:
+  Elapsed time: 38.49 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.283212702907855
+step: 1, hamming: 0.48516684057316734
+step: 2, hamming: 0.4122679599350605
+step: 3, hamming: 0.3715990744458045
+step: 4, hamming: 0.33712959465705755
+step: 5, hamming: 0.3055215565704335
+step: 6, hamming: 0.27632416013814914
+step: 7, hamming: 0.24969013092022982
+step: 8, hamming: 0.22585182805441936
+step: 9, hamming: 0.2049633711146203
+step: 10, hamming: 0.1870527292539779
+step: 11, hamming: 0.17201026556239363
+step: 12, hamming: 0.15958906161314143
+step: 13, hamming: 0.14940950893816665
+step: 14, hamming: 0.14097067661312754
+step: 15, hamming: 0.13367720346783224
+step: 16, hamming: 0.12689188975007462
+step: 17, hamming: 0.12001722872360232
+step: 18, hamming: 0.11259298739478436
+step: 19, hamming: 0.10437879910868643
+step: 20, hamming: 0.09538572254056976
+step: 21, hamming: 0.0858399679827138
+step: 22, hamming: 0.07609466393075205
+step: 23, hamming: 0.06652805408606625
+step: 24, hamming: 0.057464108791083574
+step: 25, hamming: 0.04913167509294352
+step: 26, hamming: 0.041658405919662835
+step: 27, hamming: 0.03508611471109421
+step: 28, hamming: 0.02939432149391942
+step: 29, hamming: 0.024523288156336857
+step: 30, hamming: 0.020392534638330483
+step: 31, hamming: 0.016913964177361417
+step: 32, hamming: 0.014000266435622827
+step: 33, hamming: 0.011569755817188068
+step: 34, hamming: 0.009548762818301644
+step: 35, hamming: 0.00787246630019906
+step: 36, hamming: 0.006484801536015325
+step: 37, hamming: 0.0053378673928353385
+step: 38, hamming: 0.00439110023760101
+step: 39, hamming: 0.003610375134144485
+step: 40, hamming: 0.002967125135622373
+step: 41, hamming: 0.00243752575036959
+step: 42, hamming: 0.0020017653030479934
+step: 43, hamming: 0.0016434066141342884
+step: 44, hamming: 0.0013488370518834826
+step: 45, hamming: 0.0011067998068834159
+step: 46, hamming: 0.0009079975072675566
+Running panda took: 1191.92 seconds!
+  Elapsed time: 1192.05 sec.
+Saving LIONESS network 36 to lioness_output using npy format:
+  Elapsed time: 0.14 sec.
+Running LIONESS for sample 37:
+Computing coexpression network:
+  Elapsed time: 7.96 sec.
+Normalizing networks:
+  Elapsed time: 39.65 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.358868674847066
+step: 1, hamming: 0.4902088759133489
+step: 2, hamming: 0.41701297863279135
+step: 3, hamming: 0.3759444673715102
+step: 4, hamming: 0.3411180372440193
+step: 5, hamming: 0.3091760017869247
+step: 6, hamming: 0.2796728217934235
+step: 7, hamming: 0.2527710633615762
+step: 8, hamming: 0.22870526373858438
+step: 9, hamming: 0.20762861379492448
+step: 10, hamming: 0.18956668614429256
+step: 11, hamming: 0.17440556708951607
+step: 12, hamming: 0.16189167831046938
+step: 13, hamming: 0.15163619951825455
+step: 14, hamming: 0.14312686839712327
+step: 15, hamming: 0.13575608829333027
+step: 16, hamming: 0.12887563918792963
+step: 17, hamming: 0.12188081054515462
+step: 18, hamming: 0.11431007381453741
+step: 19, hamming: 0.10592801500758754
+step: 20, hamming: 0.09675520124678431
+step: 21, hamming: 0.08702883899609054
+step: 22, hamming: 0.07711161550224382
+step: 23, hamming: 0.06738824760111196
+step: 24, hamming: 0.05818589188658865
+step: 25, hamming: 0.0497339974534394
+step: 26, hamming: 0.04215919365699807
+step: 27, hamming: 0.035501460455145246
+step: 28, hamming: 0.0297382211749094
+step: 29, hamming: 0.02480768390148229
+step: 30, hamming: 0.020627500704601266
+step: 31, hamming: 0.017107941312242466
+step: 32, hamming: 0.014160297437844785
+step: 33, hamming: 0.011701701522179114
+step: 34, hamming: 0.009657491721134026
+step: 35, hamming: 0.00796201729813772
+step: 36, hamming: 0.006558521728863385
+step: 37, hamming: 0.005398528006132937
+step: 38, hamming: 0.004440993799396041
+step: 39, hamming: 0.003651396699307838
+step: 40, hamming: 0.0030008400516794327
+step: 41, hamming: 0.002465226132920301
+step: 42, hamming: 0.0020245170332142417
+step: 43, hamming: 0.001662088412471387
+step: 44, hamming: 0.0013641729269623026
+step: 45, hamming: 0.0011193859738587197
+step: 46, hamming: 0.0009183246997441202
+Running panda took: 1266.28 seconds!
+  Elapsed time: 1266.42 sec.
+Saving LIONESS network 37 to lioness_output using npy format:
+  Elapsed time: 0.14 sec.
+Running LIONESS for sample 38:
+Computing coexpression network:
+  Elapsed time: 8.11 sec.
+Normalizing networks:
+  Elapsed time: 40.76 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.3296363657265164
+step: 1, hamming: 0.48784253655911725
+step: 2, hamming: 0.4152212042111813
+step: 3, hamming: 0.374343001956016
+step: 4, hamming: 0.33966733595295373
+step: 5, hamming: 0.3078527788395978
+step: 6, hamming: 0.27846137142077765
+step: 7, hamming: 0.25165582379171025
+step: 8, hamming: 0.22767094861111134
+step: 9, hamming: 0.20666083257149898
+step: 10, hamming: 0.18865204309794747
+step: 11, hamming: 0.17353246891769006
+step: 12, hamming: 0.16105116436293654
+step: 13, hamming: 0.1508227971862733
+step: 14, hamming: 0.14233930456594965
+step: 15, hamming: 0.1349975723928816
+step: 16, hamming: 0.12815332563161844
+step: 17, hamming: 0.12120429681390474
+step: 18, hamming: 0.11368915647858388
+step: 19, hamming: 0.10537034502642255
+step: 20, hamming: 0.09626465580007597
+step: 21, hamming: 0.08660509803308618
+step: 22, hamming: 0.07675083876581017
+step: 23, hamming: 0.06708433042340774
+step: 24, hamming: 0.05793173626687445
+step: 25, hamming: 0.04952246428112952
+step: 26, hamming: 0.04198366389709372
+step: 27, hamming: 0.03535608510622942
+step: 28, hamming: 0.029617973470966754
+step: 29, hamming: 0.024708311692838714
+step: 30, hamming: 0.020545438683720024
+step: 31, hamming: 0.01704021511651279
+step: 32, hamming: 0.014104433015450937
+step: 33, hamming: 0.011655644754606575
+step: 34, hamming: 0.009619539208002473
+step: 35, hamming: 0.007930757622440183
+step: 36, hamming: 0.006532786198664685
+step: 37, hamming: 0.005377349526032775
+step: 38, hamming: 0.0044235725711982005
+step: 39, hamming: 0.003637071685270735
+step: 40, hamming: 0.002989065243731197
+step: 41, hamming: 0.002455550810192992
+step: 42, hamming: 0.0020165693562809403
+step: 43, hamming: 0.001655561795123753
+step: 44, hamming: 0.0013588147251621296
+step: 45, hamming: 0.0011149881054951147
+step: 46, hamming: 0.0009147158697501545
+Running panda took: 1352.29 seconds!
+  Elapsed time: 1352.43 sec.
+Saving LIONESS network 38 to lioness_output using npy format:
+  Elapsed time: 0.14 sec.
+Running LIONESS for sample 39:
+Computing coexpression network:
+  Elapsed time: 8.06 sec.
+Normalizing networks:
+  Elapsed time: 41.41 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.319651173019038
+step: 1, hamming: 0.4872987689513697
+step: 2, hamming: 0.41442660960249095
+step: 3, hamming: 0.37360156753028956
+step: 4, hamming: 0.33896812266900406
+step: 5, hamming: 0.3071950894753379
+step: 6, hamming: 0.2778440881359021
+step: 7, hamming: 0.2510772627532223
+step: 8, hamming: 0.2271286298539506
+step: 9, hamming: 0.20615082996975428
+step: 10, hamming: 0.18816959321763718
+step: 11, hamming: 0.17307251263741794
+step: 12, hamming: 0.16060910609959786
+step: 13, hamming: 0.15039523137089789
+step: 14, hamming: 0.14192460768660958
+step: 15, hamming: 0.1345962224549281
+step: 16, hamming: 0.12776784673678895
+step: 17, hamming: 0.1208387466917585
+step: 18, hamming: 0.11334820617253469
+step: 19, hamming: 0.10505821021692369
+step: 20, hamming: 0.09598422796778659
+step: 21, hamming: 0.08635748583404602
+step: 22, hamming: 0.07653542816173887
+step: 23, hamming: 0.06689918485082329
+step: 24, hamming: 0.0577741013092176
+step: 25, hamming: 0.04938922275302505
+step: 26, hamming: 0.0418716652510333
+step: 27, hamming: 0.03526234540587151
+step: 28, hamming: 0.02953977871023069
+step: 29, hamming: 0.02464325728939048
+step: 30, hamming: 0.02049143205968222
+step: 31, hamming: 0.016995458111453983
+step: 32, hamming: 0.014067394717239478
+step: 33, hamming: 0.011625030821458843
+step: 34, hamming: 0.009594261084648356
+step: 35, hamming: 0.007909903588264227
+step: 36, hamming: 0.0065155950585517935
+step: 37, hamming: 0.005363187392445046
+step: 38, hamming: 0.004411912661866128
+step: 39, hamming: 0.003627476980933429
+step: 40, hamming: 0.002981173706866545
+step: 41, hamming: 0.00244906288846922
+step: 42, hamming: 0.002011237460458939
+step: 43, hamming: 0.001651181477698145
+step: 44, hamming: 0.00135521730231772
+step: 45, hamming: 0.0011120345020905805
+step: 46, hamming: 0.0009122914989584661
+Running panda took: 1414.44 seconds!
+  Elapsed time: 1414.58 sec.
+Saving LIONESS network 39 to lioness_output using npy format:
+  Elapsed time: 0.14 sec.
+Running LIONESS for sample 40:
+Computing coexpression network:
+  Elapsed time: 8.06 sec.
+Normalizing networks:
+  Elapsed time: 42.26 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.312331605180568
+step: 1, hamming: 0.48662165292434206
+step: 2, hamming: 0.41412025282421155
+step: 3, hamming: 0.3733528703537257
+step: 4, hamming: 0.33876347733747925
+step: 5, hamming: 0.30702421544944763
+step: 6, hamming: 0.277700909808314
+step: 7, hamming: 0.25095468872452725
+step: 8, hamming: 0.2270204793380761
+step: 9, hamming: 0.20605243565781167
+step: 10, hamming: 0.1880773089206617
+step: 11, hamming: 0.1729836330165978
+step: 12, hamming: 0.16052179494550461
+step: 13, hamming: 0.150308494444586
+step: 14, hamming: 0.14183826825267964
+step: 15, hamming: 0.13451086745585936
+step: 16, hamming: 0.12768469185690534
+step: 17, hamming: 0.12075938199269415
+step: 18, hamming: 0.1132742729421753
+step: 19, hamming: 0.10499108534606007
+step: 20, hamming: 0.0959247380361708
+step: 21, hamming: 0.0863058754090102
+step: 22, hamming: 0.07649143869722626
+step: 23, hamming: 0.06686220216604742
+step: 24, hamming: 0.05774332218255106
+step: 25, hamming: 0.04936378866984937
+step: 26, hamming: 0.04185074999926079
+step: 27, hamming: 0.03524520145141298
+step: 28, hamming: 0.02952575485710642
+step: 29, hamming: 0.024631799404221406
+step: 30, hamming: 0.02048207578343229
+step: 31, hamming: 0.016987818522397256
+step: 32, hamming: 0.0140611553544529
+step: 33, hamming: 0.011619932986175294
+step: 34, hamming: 0.009590094013396123
+step: 35, hamming: 0.007906495830538705
+step: 36, hamming: 0.006512807181777533
+step: 37, hamming: 0.00536090592334571
+step: 38, hamming: 0.004410045166232534
+step: 39, hamming: 0.00362594807034523
+step: 40, hamming: 0.0029799218333029626
+step: 41, hamming: 0.0024480377625538995
+step: 42, hamming: 0.002010397965375893
+step: 43, hamming: 0.0016504939774807607
+step: 44, hamming: 0.0013546542696184578
+step: 45, hamming: 0.0011115734029505434
+step: 46, hamming: 0.0009119138818534199
+Running panda took: 1415.54 seconds!
+  Elapsed time: 1415.68 sec.
+Saving LIONESS network 40 to lioness_output using npy format:
+  Elapsed time: 0.15 sec.
+Running LIONESS for sample 41:
+Computing coexpression network:
+  Elapsed time: 7.95 sec.
+Normalizing networks:
+  Elapsed time: 41.97 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.30063948264777
+step: 1, hamming: 0.4861593904547123
+step: 2, hamming: 0.41359182526509
+step: 3, hamming: 0.372867797549978
+step: 4, hamming: 0.3383154446996276
+step: 5, hamming: 0.3066136096146746
+step: 6, hamming: 0.2773219666839131
+step: 7, hamming: 0.25060386736621826
+step: 8, hamming: 0.22669393092410633
+step: 9, hamming: 0.20574610703247426
+step: 10, hamming: 0.18778738053177602
+step: 11, hamming: 0.1727068006085179
+step: 12, hamming: 0.16025556389775444
+step: 13, hamming: 0.1500514899142101
+step: 14, hamming: 0.1415904792400291
+step: 15, hamming: 0.13427373316493244
+step: 16, hamming: 0.12746088156162813
+step: 17, hamming: 0.12055224071407844
+step: 18, hamming: 0.11308700683172972
+step: 19, hamming: 0.10482593235429989
+step: 20, hamming: 0.09578249780135206
+step: 21, hamming: 0.08618583935520298
+step: 22, hamming: 0.07639172077795388
+step: 23, hamming: 0.06678025131314773
+step: 24, hamming: 0.05767639822191093
+step: 25, hamming: 0.04930929067321889
+step: 26, hamming: 0.04180638717632168
+step: 27, hamming: 0.03520904848216415
+step: 28, hamming: 0.029496239109125213
+step: 29, hamming: 0.024607656269492142
+step: 30, hamming: 0.020462294496663494
+step: 31, hamming: 0.016971590703865586
+step: 32, hamming: 0.0140478315483461
+step: 33, hamming: 0.011608988248673709
+step: 34, hamming: 0.009581101599438856
+step: 35, hamming: 0.00789910723054928
+step: 36, hamming: 0.006506736854155729
+step: 37, hamming: 0.005355919422640233
+step: 38, hamming: 0.004405949768630721
+step: 39, hamming: 0.0036225852512654353
+step: 40, hamming: 0.002977161162847956
+step: 41, hamming: 0.002445771916640818
+step: 42, hamming: 0.0020085386455085167
+step: 43, hamming: 0.0016489685534861946
+step: 44, hamming: 0.0013534030157217243
+step: 45, hamming: 0.0011105472208733104
+step: 46, hamming: 0.0009110724217669783
+Running panda took: 1446.29 seconds!
+  Elapsed time: 1446.43 sec.
+Saving LIONESS network 41 to lioness_output using npy format:
+  Elapsed time: 0.13 sec.
+Running LIONESS for sample 42:
+Computing coexpression network:
+  Elapsed time: 7.92 sec.
+Normalizing networks:
+  Elapsed time: 42.09 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.327241679695822
+step: 1, hamming: 0.4875121875036218
+step: 2, hamming: 0.41511787660273913
+step: 3, hamming: 0.3743570230663074
+step: 4, hamming: 0.3397284312760275
+step: 5, hamming: 0.30793877102255346
+step: 6, hamming: 0.2785578637911736
+step: 7, hamming: 0.2517530575311616
+step: 8, hamming: 0.22776455821441285
+step: 9, hamming: 0.20674901447317812
+step: 10, hamming: 0.18873431662184373
+step: 11, hamming: 0.17360889462093973
+step: 12, hamming: 0.16112208363758138
+step: 13, hamming: 0.15088869080895506
+step: 14, hamming: 0.1424007086474589
+step: 15, hamming: 0.13505498595278406
+step: 16, hamming: 0.12820712995597142
+step: 17, hamming: 0.12125471159524458
+step: 18, hamming: 0.11373622555377033
+step: 19, hamming: 0.10541397378101866
+step: 20, hamming: 0.09630468386057048
+step: 21, hamming: 0.08664138894384853
+step: 22, hamming: 0.07678331320013224
+step: 23, hamming: 0.0671130142448914
+step: 24, hamming: 0.057956762972561644
+step: 25, hamming: 0.0495440572097515
+step: 26, hamming: 0.042002110542848
+step: 27, hamming: 0.0353717098812829
+step: 28, hamming: 0.02963111425004116
+step: 29, hamming: 0.024719300527999876
+step: 30, hamming: 0.020554587644378595
+step: 31, hamming: 0.01704780723079289
+step: 32, hamming: 0.014110718035561397
+step: 33, hamming: 0.011660838592080992
+step: 34, hamming: 0.009623825776245994
+step: 35, hamming: 0.007934291992847398
+step: 36, hamming: 0.006535698187785365
+step: 37, hamming: 0.005379747299787247
+step: 38, hamming: 0.00442554595820294
+step: 39, hamming: 0.0036386951192629432
+step: 40, hamming: 0.0029904002923537795
+step: 41, hamming: 0.0024566483369813014
+step: 42, hamming: 0.0020174713439625597
+step: 43, hamming: 0.0016563028716571379
+step: 44, hamming: 0.0013594234361945096
+step: 45, hamming: 0.0011154879687589525
+step: 46, hamming: 0.0009151262535654084
+Running panda took: 1559.67 seconds!
+  Elapsed time: 1559.81 sec.
+Saving LIONESS network 42 to lioness_output using npy format:
+  Elapsed time: 0.14 sec.
+Running LIONESS for sample 43:
+Computing coexpression network:
+  Elapsed time: 7.91 sec.
+Normalizing networks:
+  Elapsed time: 43.00 sec.
+Inferring LIONESS network:
+step: 0, hamming: 5.157329738243712
+step: 1, hamming: 0.4760791784830098
+step: 2, hamming: 0.4048254237563432
+step: 3, hamming: 0.3648634401656819
+step: 4, hamming: 0.3309713354541426
+step: 5, hamming: 0.299871926643568
+step: 6, hamming: 0.27112682059958343
+step: 7, hamming: 0.24489157171267997
+step: 8, hamming: 0.22139521219164257
+step: 9, hamming: 0.20078942505457031
+step: 10, hamming: 0.18310382318782756
+step: 11, hamming: 0.1682348351562112
+step: 12, hamming: 0.1559461118499256
+step: 13, hamming: 0.14587289425398386
+step: 14, hamming: 0.13753256583557147
+step: 15, hamming: 0.13034959348903666
+step: 16, hamming: 0.12370475671117102
+step: 17, hamming: 0.1170125536435626
+step: 18, hamming: 0.10981538156645239
+step: 19, hamming: 0.10186523975939019
+step: 20, hamming: 0.09315792134390104
+step: 21, hamming: 0.08390164359703813
+step: 22, hamming: 0.07443362773034413
+step: 23, hamming: 0.06512109259787327
+step: 24, hamming: 0.056282336271761726
+step: 25, hamming: 0.048144826471941314
+step: 26, hamming: 0.04083759044650138
+step: 27, hamming: 0.03440523345431359
+step: 28, hamming: 0.02883057276691454
+step: 29, hamming: 0.02405715137303869
+step: 30, hamming: 0.020007503355066562
+step: 31, hamming: 0.016596186700965194
+step: 32, hamming: 0.013738175227515111
+step: 33, hamming: 0.011353721666805712
+step: 34, hamming: 0.009370787594232884
+step: 35, hamming: 0.007725917126659381
+step: 36, hamming: 0.00636418428856536
+step: 37, hamming: 0.005238635551701429
+step: 38, hamming: 0.004309494543236132
+step: 39, hamming: 0.0035432895651735415
+step: 40, hamming: 0.0029119951388992273
+step: 41, hamming: 0.00239223519934245
+step: 42, hamming: 0.00196456913527584
+step: 43, hamming: 0.0016128665825475461
+step: 44, hamming: 0.0013237684144914326
+step: 45, hamming: 0.001086227133819974
+step: 46, hamming: 0.0008911180783322308
+Running panda took: 1683.43 seconds!
+  Elapsed time: 1683.57 sec.
+Saving LIONESS network 43 to lioness_output using npy format:
+  Elapsed time: 0.14 sec.
+Running LIONESS for sample 44:
+Computing coexpression network:
+  Elapsed time: 8.11 sec.
+Normalizing networks:
+  Elapsed time: 14.99 sec.
+Memory exceeded :(
