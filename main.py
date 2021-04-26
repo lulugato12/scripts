@@ -32,11 +32,6 @@ def lioness_exec(panda_obj, nodes):
     lioness_obj = Lioness(panda_obj)                                                # LIONESS object generator
     lioness_obj.save_lioness_results(file = 'lioness.txt')                          # store the LIONESS data
 
-    analyze_lioness_obj = AnalyzeLioness(lioness_obj)                               # network generator
-    analyze_lioness_obj.top_network_plot(top = nodes, file = "lioness_top_40.png")  # plot generator up to X nodes
-    analyze_lioness_obj.top_network_plot(top = nodes, file = "lioness_top_60.png")  # plot generator up to X nodes
-    analyze_lioness_obj.top_network_plot(top = nodes, file = "lioness_top_80.png")  # plot generator up to X nodes
-
 # function to set a limit of RAM resource
 def limit_memory(maxsize):
     soft, hard = resource.getrlimit(resource.RLIMIT_AS)
