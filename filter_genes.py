@@ -84,7 +84,7 @@ def filter_exec(cases_data, limit, max_found):
 
         if c[0] in genes:                                               # checks if the gene is protein coding
             filtered_cases.append(case)                                 # saves the cases associated to that gene
-            filtered_genes.append(c[0])                                 # saves the gene
+            filtered_genes.append(c[0] + "\n")                          # saves the gene
             gene = genes[genes.index(c[0])]                             # searches for the gene id
             protein = proteins[genes.index(c[0])]                       # searches for a protein associated to that gene
             print("got one.", end = " ")
