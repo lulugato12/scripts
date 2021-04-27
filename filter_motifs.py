@@ -73,7 +73,7 @@ def filter_exec(gene_id, tf_id, gene_name, tf_name, used_genes):
         prep = p.split("\t")                                            # splits the data line to get the motif and the gene
         line = ""
         if prep[0] in gene_name and prep[1] in gene_name:               # check if both the motif and the gene exists in the registries
-            if gene_id[gene_name.index(prep[1])] in used_genes and
+            if gene_id[gene_name.index(prep[1])] in used_genes:
                 print("got one.", end = " ")
                 line += tf_id[gene_name.index(prep[0])] + "\t" + gene_id[gene_name.index(prep[1])] + "\t1.0\n"
                 output.append(line)                                    # saves the motif id, the gene id and the weight 1.0
