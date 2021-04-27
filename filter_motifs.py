@@ -102,7 +102,7 @@ print("finished.\nReading files...", end = " ")
 original, update, used_genes = reading_data(motifs, updates, genes)
 
 print("finished.\nPreparing data...", end = " ")
-gene_id, tf_id, gene_name, tf_name used_genes = prep_data(update, used_genes)
+gene_id, tf_id, gene_name, tf_name, used_genes = prep_data(update, used_genes)
 
 print("finished.\nFiltering names...")
 output = filter_exec(gene_id, tf_id, gene_name, tf_name, used_genes)
