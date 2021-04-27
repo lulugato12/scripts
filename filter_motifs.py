@@ -15,6 +15,7 @@ path = "/datos/ot/lbcajica/"                                            # path t
 log = open(path + "log.txt", "a+")                                      # log file
 motifs = path + "datos/ToyMotifData.txt"                                # motif file
 updates = path + "datos/mart_export.txt"                                # ids file
+genes = path + "output/genes_output.txt"                                # genes used file
 
 log.write("Filter motifs.\n")
 
@@ -27,17 +28,20 @@ def create_folder(path):
 
 # reads the data from the files
 #@profile(precision = 3, stream = log)
-def reading_data(motifs, updates):
+def reading_data(motifs, updates, genes):
     file_motif = open(motifs, "r")                                      # opens the file that contains the motif data
-    file_names = open(updates, "r")                                     # opens the file that contians the name-id relation
+    file_names = open(updates, "r")                                     # opens the file that contains the name-id relation
+    file_genes = open(genes, "r")                                       # opens the file that contains the genes
 
     original = file_motif.readlines()                                   # reads all the data
     update = file_names.readlines()                                     # reads all the data
+    used_genes = file_genes.readlines()                                 # reads all the data
 
     file_names.close()
     file_motif.close()
+    used_genes.close()
 
-    return original, update
+    return original, update, used_genes
 
 # prepares the information
 #@profile(precision = 3, stream = log)
@@ -59,7 +63,7 @@ def prep_data(update):
 
 # executes the filtering process
 #profile(precision = 3, stream = log)
-def filter_exec(gene_id, tf_id, gene_name, tf_name):
+def filter_exec(gene_id, tf_id, gene_name, tf_name, used_genes):
     # variables
     output = list()                                                     # output data lines
     count = 0
@@ -69,10 +73,11 @@ def filter_exec(gene_id, tf_id, gene_name, tf_name):
         prep = p.split("\t")                                            # splits the data line to get the motif and the gene
         line = ""
         if prep[0] in gene_name and prep[1] in gene_name:               # check if both the motif and the gene exists in the registries
-            print("got one.", end = " ")
-            line += tf_id[gene_name.index(prep[0])] + "\t" + gene_id[gene_name.index(prep[1])] + "\t1.0\n"
-            output.append(line)                                         # saves the motif id, the gene id and the weight 1.0
-        count += 1
+            if gene_id[gene_name.index(prep[1])] in used_genes and
+                print("got one.", end = " ")
+                line += tf_id[gene_name.index(prep[0])] + "\t" + gene_id[gene_name.index(prep[1])] + "\t1.0\n"
+                output.append(line)                                    # saves the motif id, the gene id and the weight 1.0
+            count += 1
         print("finished.")
 
     return output
@@ -88,13 +93,13 @@ print("Creating new folder...", end=" ")
 create_folder(path)
 
 print("finished.\nReading files...", end = " ")
-original, update = reading_data(motifs, updates)
+original, update, used_genes = reading_data(motifs, updates, genes)
 
 print("finished.\nPreparing data...", end = " ")
 gene_id, tf_id, gene_name, tf_name = prep_data(update)
 
 print("finished.\nFiltering names...")
-output = filter_exec(gene_id, tf_id, gene_name, tf_name)
+output = filter_exec(gene_id, tf_id, gene_name, tf_name, used_genes)
 
 print("finished.\nSaving data...", end = " ")
 save_data(output)
