@@ -72,7 +72,7 @@ def filter_exec(cases_data, limit, max_found):
     # storage variables
     filtered_genes = list()                                             # list that save the filtered genes
     filtered_proteins = list()                                          # list that saves the filtered proteins
-    filterd_cases = list()                                              # list that saves the filtered cases
+    filtered_cases = list()                                              # list that saves the filtered cases
 
     # counter
     count = 0
