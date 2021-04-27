@@ -45,7 +45,9 @@ def reading_data(motifs, updates, genes):
 
 # prepares the information
 #@profile(precision = 3, stream = log)
-def prep_data(update):
+def prep_data(update, used_genes):
+    tempo = list()
+
     # storage
     tf_name = list()                                                    # list of motif names
     gene_name = list()                                                  # list of gene names
@@ -59,7 +61,11 @@ def prep_data(update):
         gene_name.append(line[2])                                       # saves the gene name
         tf_name.append(line[3].split("\n")[0])                          # saves the motif name
 
-    return gene_id, tf_id, gene_name, tf_name
+    for l in used_genes:                                                # splits the data line to leave the gene clean
+        line = l.split("\t")
+        tempo.append(line[0])
+
+    return gene_id, tf_id, gene_name, tf_name, tempo
 
 # executes the filtering process
 #profile(precision = 3, stream = log)
@@ -96,7 +102,7 @@ print("finished.\nReading files...", end = " ")
 original, update, used_genes = reading_data(motifs, updates, genes)
 
 print("finished.\nPreparing data...", end = " ")
-gene_id, tf_id, gene_name, tf_name = prep_data(update)
+gene_id, tf_id, gene_name, tf_name used_genes = prep_data(update, used_genes)
 
 print("finished.\nFiltering names...")
 output = filter_exec(gene_id, tf_id, gene_name, tf_name, used_genes)
