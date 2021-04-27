@@ -39,7 +39,7 @@ def reading_data(motifs, updates, genes):
 
     file_names.close()
     file_motif.close()
-    used_genes.close()
+    file_genes.close()
 
     return original, update, used_genes
 
