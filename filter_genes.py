@@ -72,6 +72,7 @@ def filter_exec(cases_data, limit, max_found):
     # storage variables
     filtered_genes = list()                                             # list that save the filtered genes
     filtered_proteins = list()                                          # list that saves the filtered proteins
+    filterd_cases = list()                                              # list that saves the filtered cases
 
     # counter
     count = 0
@@ -82,7 +83,8 @@ def filter_exec(cases_data, limit, max_found):
         c = case.split("\t")                                            # splits the data line
 
         if c[0] in genes:                                               # checks if the gene is protein coding
-            filtered_genes.append(case)                                 # saves the cases associated to that gene
+            filtered_cases.append(case)                                 # saves the cases associated to that gene
+            filtered_genes.append(c[0])                                 # saves the gene
             gene = genes[genes.index(c[0])]                             # searches for the gene id
             protein = proteins[genes.index(c[0])]                       # searches for a protein associated to that gene
             print("got one.", end = " ")
@@ -101,19 +103,22 @@ def filter_exec(cases_data, limit, max_found):
         if limit and found > max_found:
             break
 
-    return filtered_genes, filtered_proteins
+    return filtered_genes, filtered_proteins, filtered_cases
 
 # saves the filtered data
 #@profile(precision = 3, stream = log)
-def save_data(filtered_genes, filtered_proteins):
-    file_output_genes = open(path + "output/genes.txt", "w")            # creates a file to save the cases output
+def save_data(filtered_genes, filtered_proteins, filtered_cases):
+    file_output_cases = open(path + "output/genes.txt", "w")            # creates a file to save the cases output
     file_output_proteins = open(path + "output/proteins.txt", "w")      # creates a file to save the gene-protein data
+    file_output_genes = open(path + "output/genes_output.txt", "w")     # creates a file to save the genes output
 
     file_output_genes.writelines(filtered_genes)                        # saves the data
     file_output_proteins.writelines(filtered_proteins)                  # saves the data
+    file_output_cases.writelines(filtered_cases)                        # saves the data
 
     file_output_genes.close()
     file_output_proteins.close()
+    file_output_cases.close()
 
 print("Creating new folder...", end = " ")
 create_folder(path)
@@ -125,10 +130,10 @@ print("finished.\nPreparing genes...", end = " ")
 genes, proteins = prep_data(genes_data)
 
 print("finished.\nFiltering genes...")
-filtered_genes, filtered_proteins = filter_exec(cases_data, limit, max_found)
+filtered_genes, filtered_proteins, filtered_cases = filter_exec(cases_data, limit, max_found)
 
 print("finished.\nSaving data...", end = " ")
-save_data(filtered_genes, filtered_proteins)
+save_data(filtered_genes, filtered_proteins, filtered_cases)
 
 print("Finished.\nGenes saved in " + path + "output/genes.txt.\nProteins saved in " + path + "output/proteins.txt.")
 print("It took: ", time.thread_time()/60, "min\n")
