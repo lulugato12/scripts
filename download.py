@@ -1,8 +1,8 @@
 import gdown
 
 # genes cerebro
-url = 'https://drive.google.com/uc?id=1jj1L8NaaCQzm7s6sc8gXh2oP8vbpnK13'
-output = 'cerebro_data.gz'
+url = 'https://drive.google.com/uc?id=1RT99lD9FQ7fl5tKm32eKdy9N1gGnolJ_'
+output = 'breast_data.gz'
 gdown.download(url, output, quiet=False)
 
 # ids
