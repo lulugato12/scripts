@@ -62,7 +62,7 @@ def prep_data(update, used_genes):
         tf_name.append(line[3].split("\n")[0])                          # saves the motif name
 
     for l in used_genes:                                                # splits the data line to leave the gene clean
-        line = l.split("\t")
+        line = l.split("\n")
         tempo.append(line[0])
 
     return gene_id, tf_id, gene_name, tf_name, tempo

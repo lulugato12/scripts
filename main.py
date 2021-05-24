@@ -23,7 +23,7 @@ log.write("LIONESS\n")
 # function to execute the PANDA algorithm
 #@profile(precision = 3, stream = log)
 def panda_exec(genes, motif, ppi):
-    panda_obj = Panda(genes, None, ppi, remove_missing=False, keep_expression_matrix=True, save_memory=False)
+    panda_obj = Panda(genes, motif, None, remove_missing=False, keep_expression_matrix=True, save_memory=False)
     return panda_obj
 
 # function to execute the pipeline of the LIONESS algorithm
