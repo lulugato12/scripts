@@ -8,7 +8,6 @@ import os
 # requirements for resource measurement
 import time
 import resource
-from memory_profiler import profile
 
 # variables
 path = "/datos/ot/lbcajica/"                                            # path to the current directory
@@ -27,7 +26,6 @@ def create_folder(path):
         print("The folder already exists.", end = " ")
 
 # reads the data from the files
-#@profile(precision = 3, stream = log)
 def reading_data(motifs, updates, genes):
     file_motif = open(motifs, "r")                                      # opens the file that contains the motif data
     file_names = open(updates, "r")                                     # opens the file that contains the name-id relation
@@ -44,7 +42,6 @@ def reading_data(motifs, updates, genes):
     return original, update, used_genes
 
 # prepares the information
-#@profile(precision = 3, stream = log)
 def prep_data(update, used_genes):
     tempo = list()
 
@@ -58,8 +55,8 @@ def prep_data(update, used_genes):
         line = l.split("\t")                                            # splits the data line
         gene_id.append(line[0])                                         # saves de gene id
         tf_id.append(line[1])                                           # saves the motif id
-        gene_name.append(line[2])                                       # saves the gene name
-        tf_name.append(line[3].split("\n")[0])                          # saves the motif name
+        gene_name.append(line[3])                                       # saves the gene name
+        tf_name.append(line[4].split("\n")[0])                          # saves the motif name
 
     for l in used_genes:                                                # splits the data line to leave the gene clean
         line = l.split("\n")
@@ -68,7 +65,6 @@ def prep_data(update, used_genes):
     return gene_id, tf_id, gene_name, tf_name, tempo
 
 # executes the filtering process
-#profile(precision = 3, stream = log)
 def filter_exec(gene_id, tf_id, gene_name, tf_name, used_genes):
     # variables
     output = list()                                                     # output data lines
@@ -89,7 +85,6 @@ def filter_exec(gene_id, tf_id, gene_name, tf_name, used_genes):
     return output
 
 # saves the filtered data
-#@profile(precision = 3, stream = log)
 def save_data(output):
     new_file = open(path + "output/motif.txt", "w")                     # creates a new file to save the motifs
     new_file.writelines(output)                                         # saves the data
