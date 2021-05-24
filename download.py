@@ -6,13 +6,8 @@ output = 'cerebro_data.gz'
 gdown.download(url, output, quiet=False)
 
 # ids
-url = 'https://drive.google.com/uc?id=16rQs0vCapz3S9tjBgmJjWRBIBTEfiNRi'
+url = 'https://drive.google.com/uc?id=1PD4uqSYW5bXoR9tHJjkSv30RgrMlb_9E'
 output = 'mart_export.txt'
-gdown.download(url, output, quiet=False)
-
-# protein coding
-url = 'https://drive.google.com/uc?id=1XBkZ98oQKmZ7YRKExvm48Z4IU3YtROK1'
-output = 'protein_coding.txt'
 gdown.download(url, output, quiet=False)
 
 # motif data
