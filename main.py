@@ -23,14 +23,19 @@ log.write("LIONESS\n")
 # function to execute the PANDA algorithm
 #@profile(precision = 3, stream = log)
 def panda_exec(genes, motif, ppi):
-    panda_obj = Panda(genes, motif, None, remove_missing=False, keep_expression_matrix=True, save_memory=False)
+    panda_obj = Panda(genes, motif, ppi, remove_missing=False, keep_expression_matrix=True, save_memory=False)
+    panda_obj.export_panda_results.to_csv(path_or_buf = "panda_total.csv", sep = "\t")
+    in_degree = panda_obj.return_panda_indegree()
+    out_degree = panda_obj.return_panda_outdegree()
+    in_degree.to_csv(path_or_buf = "in_degree.csv", sep = "\t")
+    out_degree.to_csv(path_or_buf = "out_degree.csv", sep = "\t")
     return panda_obj
 
 # function to execute the pipeline of the LIONESS algorithm
 #@profile(precision = 3, stream = log)
 def lioness_exec(panda_obj, nodes):
     lioness_obj = Lioness(panda_obj)                                                # LIONESS object generator
-    lioness_obj.save_lioness_results(file = 'lioness.txt')                          # store the LIONESS data
+    lioness_obj.save_lioness_results()			                            # store the LIONESS data
 
 # function to set a limit of RAM resource
 def limit_memory(maxsize):
@@ -43,8 +48,8 @@ try:
     print("Running pandas...")
     panda_obj = panda_exec(genes, motif, ppi)
 
-    print("finished.\nRunning lioness...")
-    lioness_exec(panda_obj, nodes)
+#    print("finished.\nRunning lioness...")
+#    lioness_exec(panda_obj, nodes)
 
     print("finished. It took", time.thread_time()/60, "min")                        # time execution
     log.write("Time execution:" + str(time.thread_time()/60) + "min\n")

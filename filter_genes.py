@@ -86,7 +86,7 @@ def filter_exec(cases_data, limit, max_found):
             print("got one.", end = " ")
 
             if protein != " ":
-                filtered_proteins.append(protein)                       # if a protein, saves the protein to another list
+                filtered_proteins.append(protein + "\n")                       # if a protein, saves the protein to another list
 
             if limit:
                 found += 1
