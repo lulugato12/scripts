@@ -1,19 +1,21 @@
 # Unzip PPI interactions from STRING gz
 # Lourdes B. Cajica
-# 17 - 3 - 21
+# Last update: 19 - 10 - 21
 
 import os
 import gzip
+from timer import Timer
 
-path = "/datos/ot/lbcajica/"                                                # base path
+path = # insert path
+write_file = # insert output file as .txt | ej: '9606.protein.links.v11.0.txt'
+read_file = # insert .gz file | ej. '9606.protein.links.v11.0.txt.gz'
 
-print("Starting unziping ppi data...", end = " ")
+with Timer("Unziping ppi data..."):
+    try:
+        txt = open(path + write_file, 'wb')
+        gzfile = gzip.open(path + read_file, 'rb')
+        txt.writelines(gzfile)
+    except OSError as e:
+        print("Not a valid .gz file :()")
 
-try:
-    txt = open(path + "datos/9606.protein.links.v11.0.txt", 'wb')                # new .txt files
-    gzfile = gzip.open(path + "datos/9606.protein.links.v11.0.txt.gz", 'rb')     # zipped folder
-    txt.writelines(gzfile)                                                  # final file
-except OSError as e:                                                        # if something goes wrong
-    print("Not a valid .gz file")
-
-print("finished.\n Data saved in " + path + "datos/protein.links.v11.0.txt")
+print('Data saved in: ' + path + write_file)
