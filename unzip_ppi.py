@@ -6,9 +6,9 @@ import os
 import gzip
 from timer import Timer
 
-path = # insert path
-write_file = # insert output file as .txt | ej: '9606.protein.links.v11.0.txt'
-read_file = # insert .gz file | ej. '9606.protein.links.v11.0.txt.gz'
+path = '#insert path here'
+write_file = 'insert output file as .txt | ej: 9606.protein.links.v11.0.txt'
+read_file = 'insert .gz file | ej. 9606.protein.links.v11.0.txt.gz'
 
 with Timer("Unziping ppi data..."):
     try:

@@ -7,8 +7,8 @@ import gzip
 import xtarfile as tarfile
 from timer import Timer
 
-path = # insert path
-read_file = # insert .gz file | ej. "gdc_download_20211006_173713.629179.tar.gz"
+path = 'insert path'
+read_file = 'insert .gz file | ej. gdc_download_20211006_173713.629179.tar.gz'
 
 with Timer("Creting folders..."):
     try:
