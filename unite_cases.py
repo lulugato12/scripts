@@ -1,46 +1,56 @@
 # Unite gene cases
 # Lourdes B. Cajica
-# 15 - 3 - 21
+# Last update: 19 - 10 - 21
 
 import os
+import sys
+import pandas as pd
+from timer import Timer
 
-path = "/datos/ot/lbcajica/"                                            # the path to the directory
+path = 'C:/Users/hp/Desktop/mission_catness/'
 count = 0
-newlines = list()
+newlines = []
+samples = os.listdir(path + "data/")
+index = []
 
-print("Reading data...", end = " ")
+limit = False
+max_found = 0                                       # count limit
+if len(sys.argv) == 2:
+    limit = True                                    # flag for giving an specific amount of samples
+    max_found = int(sys.argv[1])
+    print('Will be filtered', max_found, 'cases.')
 
-for file in os.listdir(path + "data/"):                                 # iterates through the directory files
-    print("file " + str(count) + "...", end = "")
-    data = open(path + "data/" + file, "r")                             # open the current case file
-    lines = data.readlines()                                            # read all the lines
-    data.close()
+with Timer("Reading data..."):
+    for file in samples:                            # iterates through the directory files
+        print("Reading file: " + file)
+        data = open(path + "data/" + file, "r")     # open the current case file
+        lines = data.readlines()                    # read all the lines
+        data.close()
 
-    i = 0
-    for line in lines:                                                  # iterates through each line
-        if count == 0:
-            l = line.split("\t")                                        # separates gene id and measure
-            id = l[0].split(".")                                        # separates the gene version
-            newlines.append("\n" + id[0] + "\t" + l[1].rstrip("\n"))    # save the new line
-        else:
-            l = line.split("\t")                                        # separates gene id and measure
-            newlines[i] += "\t" + l[1].rstrip("\n")                     # saves the measure only
-            i += 1
+        i = 0
+        for line in lines:                          # iterates through each line
+            l = line.split('\t')
+            if count == 0:                          # separates gene id and measure
+                id = l[0].split('.')                # removes the gene version
+                newlines.append([l[1].rstrip('\n')])
+                index.append(id[0])
+            else:
+                newlines[i].append(l[1].rstrip('\n'))
+                i += 1
 
-    count += 1
-    print(" finished.")
+        count += 1
+        if limit and count == max_found:
+            break
 
-print("finished.\nWriting final file...", end = " ")
+with Timer('Saving data...'):
+    try:
+        os.mkdir(path + 'output/')                  # creates the folder where the data is going to be saved
+    except OSError as error:
+        print('the folder already exists.')
 
-try:
-    os.mkdir(path + "output/")                                          # creates the folder where the data is going to be saved
-except OSError as error:
-    print("the folder already exists.")
+    if limit:
+        pd.DataFrame(newlines, columns = samples[:max_found], index = pd.Index(index)).to_csv(path + 'output/' + str(max_found) + '_cases.csv')
+    else:
+        pd.DataFrame(newlines, columns = samples, index = pd.Index(index)).to_csv(path + 'output/cases.csv')
 
-newlines[0] = newlines[0].replace("\n", "")                             # deletes the \n in the line
-
-newfile = open(path + "output/cases.txt", "w")                          # creates the output file
-newfile.writelines(newlines)                                            # writes down the data
-newfile.close()
-
-print("finished.\nData saved in", path + "output/cases.txt.")
+print('Data saved in', path + 'output/cases.csv')
