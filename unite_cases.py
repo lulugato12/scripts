@@ -10,7 +10,7 @@ from timer import Timer
 path = 'C:/Users/hp/Desktop/mission_catness/'
 count = 0
 newlines = []
-samples = os.listdir(path + "data/")
+samples = os.listdir(path + 'pam50files/')
 index = []
 
 limit = False
@@ -20,10 +20,10 @@ if len(sys.argv) == 2:
     max_found = int(sys.argv[1])
     print('Will be filtered', max_found, 'cases.')
 
-with Timer("Reading data..."):
+with Timer('Reading data...'):
     for file in samples:                            # iterates through the directory files
-        print("Reading file: " + file)
-        data = open(path + "data/" + file, "r")     # open the current case file
+        print('Reading file: ' + file)
+        data = open(path + 'pam50files/' + file, 'r')     # open the current case file
         lines = data.readlines()                    # read all the lines
         data.close()
 
@@ -49,8 +49,8 @@ with Timer('Saving data...'):
         print('the folder already exists.')
 
     if limit:
-        pd.DataFrame(newlines, columns = samples[:max_found], index = pd.Index(index)).to_csv(path + 'output/' + str(max_found) + '_cases.csv')
+        pd.DataFrame(newlines, columns = [sample.replace('.txt', '') for sample in samples[:max_found]], index = pd.Index(index)).to_csv(path + 'output/' + str(max_found) + '_cases.csv')
     else:
-        pd.DataFrame(newlines, columns = samples, index = pd.Index(index)).to_csv(path + 'output/cases.csv')
+        pd.DataFrame(newlines, columns = [sample.replace('.txt', '') for sample in samples], index = pd.Index(index)).to_csv(path + 'output/cases.csv')
 
 print('Data saved in', path + 'output/cases.csv')

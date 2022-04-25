@@ -46,9 +46,8 @@ with Timer('Filtering data...'):
         if gene in genes:                                   # checks if the gene is protein coding
             filtered_cases.append(cases_data.loc[gene])     # saves the cases associated to that gene
             print('got one.', end = ' ')
-
-            if limit:
-                found += 1
+            found += 1
+            
         else:
             print("not found in genes.", end = ' ')
 
@@ -59,5 +58,5 @@ with Timer('Filtering data...'):
             break
 
 with Timer('Saving data...'):
-    pd.DataFrame(filtered_cases, columns = cases_data.columns).to_csv(path + 'output/' + str(cases_data.index) +'_cases.csv')
+    pd.DataFrame(filtered_cases, columns = cases_data.columns).to_csv(path + 'output/' + str(found) +'_cases.csv')
     print('Cases saved in output/' + str(cases_data.index) +'_cases.csv')
